@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Cursor / VS Code
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
