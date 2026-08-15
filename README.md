@@ -38,7 +38,7 @@ This repository is **source-available**.
 
 You are welcome to explore the code and use it for learning and inspiration. The code, designs, content, case studies, images, and other original creative work may not be copied, redistributed, or presented as your own without permission.
 
-See the full (LICENSE.md) for details.
+See the full LICENSE.md for details.
 
 ## ✦ Contact
 
