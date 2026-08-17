@@ -101,6 +101,29 @@
   border-radius: var(--button-radius);
 }
 
+/* Light — paper text on dark / vermillion backgrounds */
+.button--light {
+  background-color: transparent;
+  color: var(--color-paper);
+  padding-inline-end: var(--button-padding-x);
+  justify-content: flex-start;
+}
+
+.button--light:hover {
+  color: var(--color-paper);
+  opacity: 0.85;
+}
+
+.button--light:active {
+  opacity: 0.75;
+}
+
+.button--light:focus-visible {
+  outline: 2px solid var(--color-paper);
+  outline-offset: 2px;
+  border-radius: var(--button-radius);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .button {
     transition: none;

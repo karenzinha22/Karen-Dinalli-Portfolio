@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import './Button.css';
 
-type ButtonVariant = 'primary' | 'secondary';
+type ButtonVariant = 'primary' | 'secondary' | 'light';
 type ArrowDirection = 'diagonal' | 'right';
 
 type BaseProps = {
@@ -14,6 +14,8 @@ type BaseProps = {
 
 type ButtonAsLink = BaseProps & {
   href: string;
+  target?: string;
+  rel?: string;
   onClick?: never;
   type?: never;
 };
@@ -95,8 +97,9 @@ export function Button(props: ButtonProps) {
   );
 
   if (href) {
+    const { target, rel } = props as ButtonAsLink;
     return (
-      <a href={href} className={classes}>
+      <a href={href} className={classes} target={target} rel={rel}>
         {content}
       </a>
     );

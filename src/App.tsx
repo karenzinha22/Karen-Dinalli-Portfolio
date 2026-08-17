@@ -1,6 +1,8 @@
 import { Navbar } from './components/Navbar/Navbar';
 import { Hero } from './components/Hero/Hero';
 import { ProjectsSection } from './components/Projects/ProjectsSection';
+import { AboutSection } from './components/About/AboutSection';
+import { Footer } from './components/Footer/Footer';
 
 export function App() {
   return (
@@ -9,7 +11,9 @@ export function App() {
       <main>
         <Hero />
         <ProjectsSection />
+        <AboutSection />
       </main>
+      <Footer />
     </>
   );
 }

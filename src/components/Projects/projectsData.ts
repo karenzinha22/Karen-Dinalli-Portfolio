@@ -8,7 +8,7 @@ export const projects: Project[] = [
     statement:
       "When everything is connected, finding your way shouldn't be complicated.",
     accent: 'vermilion',
-    categories: 'PRODUCT STRATEGY · IA · PRODUC DESIGN',
+    categories: 'PRODUCT STRATEGY · IA · PRODUCT DESIGN',
     description: {
       paragraphs: [
         'Web Portal is a strategic redesign of Ohpen’s client portal, turning a legacy interface into a fast, modern, and scalable experience.',
