@@ -28,15 +28,33 @@
   justify-content: center;
   width: 18px;
   height: 18px;
-  transform: rotate(-90deg);
   flex-shrink: 0;
   color: inherit;
+}
+
+.button__icon--diagonal {
+  transform: rotate(-90deg);
+}
+
+.button__icon--right {
+  transform: none;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.button:hover .button__icon--right,
+.button:focus-visible .button__icon--right {
+  transform: translateY(-2px);
 }
 
 .button__icon-svg {
   display: block;
   width: 18px;
   height: 18px;
+}
+
+/* Flush left alignment for inline text CTAs */
+.button--flush-start {
+  padding-inline-start: 0;
 }
 
 /* Primary */
@@ -66,6 +84,7 @@
   background-color: transparent;
   color: var(--color-ink);
   padding-inline-end: var(--button-padding-x);
+  justify-content: flex-start;
 }
 
 .button--secondary:hover {
@@ -85,5 +104,14 @@
 @media (prefers-reduced-motion: reduce) {
   .button {
     transition: none;
+  }
+
+  .button__icon--right {
+    transition: none;
+  }
+
+  .button:hover .button__icon--right,
+  .button:focus-visible .button__icon--right {
+    transform: none;
   }
 }

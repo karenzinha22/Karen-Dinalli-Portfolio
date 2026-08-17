@@ -70,4 +70,10 @@
     transform: none;
     transition: none;
   }
+
+  .reveal .reveal-stagger {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
