@@ -1,0 +1,73 @@
+/* Motion system */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up var(--duration-slow) var(--ease-out) both;
+}
+
+.animate-fade-up[data-delay="1"] {
+  animation-delay: var(--stagger-step);
+}
+
+.animate-fade-up[data-delay="2"] {
+  animation-delay: calc(var(--stagger-step) * 2);
+}
+
+.animate-fade-up[data-delay="3"] {
+  animation-delay: calc(var(--stagger-step) * 3);
+}
+
+.animate-fade-up[data-delay="4"] {
+  animation-delay: calc(var(--stagger-step) * 4);
+}
+
+/* Scroll reveal (for future sections) */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity var(--duration-slow) var(--ease-out),
+    transform var(--duration-slow) var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes scroll-hint-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateY(4px);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

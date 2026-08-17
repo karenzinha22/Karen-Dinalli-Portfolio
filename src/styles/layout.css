@@ -1,0 +1,9 @@
+/* Layout — shared page container */
+
+.page-container {
+  width: min(
+    var(--container-max),
+    100% - 2 * var(--page-padding-min)
+  );
+  margin-inline: auto;
+}
