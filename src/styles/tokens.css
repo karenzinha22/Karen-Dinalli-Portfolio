@@ -18,8 +18,20 @@
   /* Layout — Figma: 1144px content column centered in 1440px artboard */
   --container-max: 1144px;
   --page-padding-min: 1.5rem;
+  --page-padding-tablet: 64px;
   --navbar-height: 80px;
   --nav-desktop-breakpoint: 768px;
+
+  /* Responsive breakpoints (use in media queries) */
+  --bp-mobile-max: 767px;
+  --bp-tablet-min: 768px;
+  --bp-tablet-max: 1024px;
+  --bp-laptop-min: 1025px;
+  --bp-laptop-max: 1440px;
+  --bp-desktop-min: 1441px;
+
+  /* Hero eyebrow → headline gap (desktop target ≈ 24px) */
+  --hero-eyebrow-headline-gap: 24px;
 
   /* Hero spacing */
   --hero-top-offset: clamp(2rem, 5vh, 3.5rem);

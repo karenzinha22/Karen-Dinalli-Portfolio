@@ -7,3 +7,13 @@
   );
   margin-inline: auto;
 }
+
+/* Tablet — iPad Pro 11" (834px): 64px horizontal gutters */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page-container {
+    width: min(
+      var(--container-max),
+      100% - 2 * var(--page-padding-tablet)
+    );
+  }
+}

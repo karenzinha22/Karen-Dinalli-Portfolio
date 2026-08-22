@@ -1,0 +1,77 @@
+/* Shared responsive utilities — mobile centering, tablet gutters */
+
+/* Full-bleed dark blocks align with tablet page gutters */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .project-intro,
+  .about-transition {
+    padding-inline: var(--page-padding-tablet);
+  }
+}
+
+/* Mobile — center content (iPhone 16 / ≤767px) */
+@media (max-width: 767px) {
+  .hero__grid,
+  .hero__content,
+  .hero__intro,
+  .hero__actions,
+  .hero__description,
+  .project-card,
+  .project-card__content,
+  .about-section__content,
+  .about-section__visual,
+  .site-footer__content,
+  .site-footer__artwork,
+  .site-footer__bar {
+    text-align: center;
+  }
+
+  .hero__content,
+  .hero__intro,
+  .hero__actions,
+  .project-card__content,
+  .about-section__content,
+  .site-footer__content {
+    align-items: center;
+  }
+
+  .hero__visual,
+  .project-card__visual,
+  .about-section__visual,
+  .site-footer__artwork {
+    justify-content: center;
+  }
+
+  .about-section__cta,
+  .site-footer__talk {
+    align-self: center;
+  }
+
+  .button--flush-start {
+    padding-inline-start: var(--button-padding-x);
+    justify-content: center;
+  }
+
+  /* Section label + horizontal divider (matches OUTSIDE THE SCREEN / SELECTED WORK) */
+  .about-section__header,
+  .projects-section__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .about-section__label,
+  .projects-section__label {
+    flex-shrink: 0;
+  }
+
+  .about-section__header-divider,
+  .projects-section__header-divider {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+  }
+}

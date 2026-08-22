@@ -10,6 +10,7 @@
   font-weight: 500;
   line-height: 1.65;
   white-space: nowrap;
+  vertical-align: middle;
   transition:
     background-color var(--duration-normal) var(--ease-out),
     color var(--duration-normal) var(--ease-out),
@@ -17,13 +18,19 @@
 }
 
 .button__label {
-  display: inline-flex;
-  align-items: center;
-  height: 32px;
+  display: block;
+  line-height: 1.65;
+}
+
+.button--primary {
+  padding-block: 4px;
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  box-shadow: var(--button-shadow);
 }
 
 .button__icon {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 18px;
@@ -38,12 +45,14 @@
 
 .button__icon--right {
   transform: none;
-  transition: transform var(--duration-normal) var(--ease-out);
+  transition:
+    transform var(--duration-normal) var(--ease-out),
+    color var(--duration-normal) var(--ease-out);
 }
 
 .button:hover .button__icon--right,
 .button:focus-visible .button__icon--right {
-  transform: translateY(-2px);
+  transform: translateX(3px);
 }
 
 .button__icon-svg {
@@ -58,12 +67,6 @@
 }
 
 /* Primary */
-.button--primary {
-  background-color: var(--color-ink);
-  color: var(--color-paper);
-  box-shadow: var(--button-shadow);
-}
-
 .button--primary:hover {
   background-color: var(--color-vermilion);
   color: var(--color-paper);

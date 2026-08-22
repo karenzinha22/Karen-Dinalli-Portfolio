@@ -33,6 +33,10 @@ function renderParagraph(parts: string | DescriptionPart[], accent: Project['acc
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const ref = useScrollReveal<HTMLElement>();
+  const projectHref =
+    project.ctaIcon === false
+      ? undefined
+      : (project.ctaHref ?? `#${project.id}`);
 
   return (
     <article
@@ -47,7 +51,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </p>
 
         <h3 id={`project-${project.id}-title`} className="project-card__name">
-          {project.name}
+          {projectHref ? (
+            <a href={projectHref} className="project-card__title-link">
+              {project.name}
+            </a>
+          ) : (
+            project.name
+          )}
         </h3>
 
         <p className={`project-card__statement project-card__statement--${project.accent}`}>
@@ -69,7 +79,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         ) : (
           <Button
             variant="secondary"
-            href={project.ctaHref ?? `#${project.id}`}
+            href={projectHref!}
             arrowDirection="right"
             icon
             className="project-card__cta button--flush-start"
@@ -80,14 +90,31 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       <div className="project-card__visual reveal-stagger" data-delay="2">
-        <div className="project-card__image-frame">
-          <img
-            src={project.imageSrc}
-            alt={project.imageAlt}
-            className="project-card__image"
-            loading="lazy"
-          />
-        </div>
+        {projectHref ? (
+          <a
+            href={projectHref}
+            className="project-card__image-link"
+            aria-label={`View ${project.name} case study`}
+          >
+            <div className="project-card__image-frame">
+              <img
+                src={project.imageSrc}
+                alt={project.imageAlt}
+                className="project-card__image"
+                loading="lazy"
+              />
+            </div>
+          </a>
+        ) : (
+          <div className="project-card__image-frame">
+            <img
+              src={project.imageSrc}
+              alt={project.imageAlt}
+              className="project-card__image"
+              loading="lazy"
+            />
+          </div>
+        )}
       </div>
     </article>
   );

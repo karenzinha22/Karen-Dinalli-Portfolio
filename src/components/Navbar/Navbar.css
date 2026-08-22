@@ -167,6 +167,7 @@
 .navbar__mobile-nav {
   flex: 1;
   padding-top: var(--space-2xl);
+  padding-inline: 24px;
 }
 
 .navbar__mobile-list {

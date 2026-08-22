@@ -8,14 +8,16 @@ export function Hero() {
         <div className="hero__body">
           <div className="hero__grid">
             <div className="hero__content">
-              <p className="hero__eyebrow animate-fade-up" data-delay="1">
-                PRODUCT DESIGNER · BARCELONA
-              </p>
+              <div className="hero__intro">
+                <p className="hero__eyebrow animate-fade-up" data-delay="1">
+                  PRODUCT DESIGNER · BARCELONA
+                </p>
 
-              <h1 id="hero-heading" className="hero__headline animate-fade-up" data-delay="2">
-                <span>Curious by nature.</span>
-                <span>Structured by design.</span>
-              </h1>
+                <h1 id="hero-heading" className="hero__headline animate-fade-up" data-delay="2">
+                  <span>Curious by nature.</span>
+                  <span>Structured by design.</span>
+                </h1>
+              </div>
 
               <p className="hero__description animate-fade-up" data-delay="3">
                 I design digital products that make complex things feel clear, useful
@@ -23,10 +25,10 @@ export function Hero() {
               </p>
 
               <div className="hero__actions animate-fade-up" data-delay="4">
-                <Button variant="primary" href="#projects">
+                <Button variant="primary" href="#projects" icon={false}>
                   VIEW PROJECTS
                 </Button>
-                <Button variant="secondary" href="#about">
+                <Button variant="secondary" href="#about" arrowDirection="right">
                   ABOUT ME
                 </Button>
               </div>
