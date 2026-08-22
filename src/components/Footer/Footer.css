@@ -162,6 +162,23 @@
   .site-footer__artwork-frame {
     max-width: min(180px, 100%);
   }
+
+  /* Footer utility links — mobile-style vertical list (avoids awkward wrap) */
+  .site-footer__links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .site-footer__links-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: clamp(0.5rem, 2vw, 1rem);
+  }
 }
 
 /* ── Mobile — centered stack ── */
