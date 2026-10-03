@@ -13,7 +13,7 @@ export function AboutPage() {
   return (
     <>
       <Navbar />
-      <main className="about-page">
+      <main className="about-page page-start">
         <AboutHero />
         <AboutInspirations />
         <AboutQuote />

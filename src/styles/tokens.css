@@ -30,12 +30,25 @@
   --bp-laptop-max: 1440px;
   --bp-desktop-min: 1441px;
 
+  /* Typography scale — desktop */
+  --text-hero: clamp(4.5rem, 5.2vw, 5rem); /* 72–80px */
+  --text-hero-lh: 1.05;
+  --text-hero-support: 1.25rem; /* 20px */
+  --text-body: 1rem; /* 16px */
+  --text-body-lg: 1.125rem; /* 18px */
+
   /* Hero eyebrow → headline gap (desktop target ≈ 24px) */
   --hero-eyebrow-headline-gap: 24px;
 
-  /* Hero spacing */
+  /* Hero spacing — shared rhythm, not a full-viewport fill */
   --hero-top-offset: clamp(2rem, 5vh, 3.5rem);
+  --hero-bottom-gap: clamp(1.75rem, 4vh, 2.75rem);
   --hero-scroll-gap: clamp(1rem, 2vh, 1.75rem);
+  /* Shared visual footprint for hero artwork (Home frame is 437×559) */
+  --hero-art-max: 437px;
+  --hero-art-max-compact: 380px;
+  --hero-art-max-tablet: 320px;
+  --hero-art-max-mobile: 280px;
 
   /* Spacing scale */
   --space-xs: 0.5rem;

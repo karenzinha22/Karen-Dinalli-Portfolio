@@ -1,0 +1,36 @@
+.projects-page {
+  background-color: var(--color-paper);
+}
+
+.projects-page__rule {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(32, 32, 30, 0.14);
+}
+
+.projects-quote__block {
+  margin: 0;
+  padding: clamp(3.5rem, 9vh, 6.5rem) 1rem;
+  text-align: center;
+}
+
+.projects-quote__block p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  line-height: 1.32;
+  color: var(--color-ink);
+  margin: 0 auto;
+  max-width: 52rem;
+}
+
+.projects-page__accent {
+  color: var(--color-vermilion);
+}
+
+@media (max-width: 767px) {
+  .projects-quote__block {
+    padding-block: clamp(2.5rem, 8vh, 4rem);
+    padding-inline: 0;
+  }
+}

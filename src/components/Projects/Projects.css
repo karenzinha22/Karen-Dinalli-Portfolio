@@ -236,7 +236,7 @@
 }
 
 .project-card__description {
-  font-size: 14px;
+  font-size: var(--text-body);
   line-height: 1.65;
   color: var(--color-ink);
   padding-bottom: clamp(0.5rem, 1.5vh, 1.5rem);

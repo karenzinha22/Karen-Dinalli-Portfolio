@@ -3,6 +3,7 @@ import { Divider } from './Divider';
 import { EditorialQuote } from './EditorialQuote';
 import { ProjectCard } from './ProjectCard';
 import { ProjectIntro } from './ProjectIntro';
+import { SelectedWorkHeader } from './SelectedWorkHeader';
 import { editorialQuotes, projects } from './projectsData';
 import './Projects.css';
 
@@ -17,12 +18,7 @@ export function ProjectsSection() {
         aria-labelledby="selected-work-heading"
       >
         <div className="page-container projects-section__inner">
-          <header className="projects-section__header">
-            <h2 id="selected-work-heading" className="projects-section__label">
-              SELECTED WORK
-            </h2>
-            <Divider variant="full" className="projects-section__header-divider" />
-          </header>
+          <SelectedWorkHeader />
 
           <div className="projects-section__list">
             {projects.map((project, index) => (

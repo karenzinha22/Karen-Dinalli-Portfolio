@@ -8,6 +8,33 @@
   margin-inline: auto;
 }
 
+/*
+  Shared inset below the fixed navbar.
+  Matches Home: .hero padding-top (navbar) + .hero__wrapper padding-top.
+  About/Projects apply this on <main>; Home owns the same values in Hero.css.
+*/
+.page-start {
+  padding-top: calc(var(--navbar-height) + var(--hero-top-offset));
+}
+
+@media (max-height: 900px) and (min-width: 769px) {
+  .page-start {
+    padding-top: calc(var(--navbar-height) + clamp(1.5rem, 3.5vh, 2.5rem));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (max-height: 850px) {
+  .page-start {
+    padding-top: calc(var(--navbar-height) + clamp(1.25rem, 3vh, 2rem));
+  }
+}
+
+@media (max-width: 767px) {
+  .page-start {
+    padding-top: calc(var(--navbar-height) + clamp(1.25rem, 4vh, 2rem));
+  }
+}
+
 /* Tablet — iPad Pro 11" (834px): 64px horizontal gutters */
 @media (min-width: 768px) and (max-width: 1024px) {
   .page-container {

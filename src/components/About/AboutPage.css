@@ -15,9 +15,9 @@
 
 .about-page__display {
   font-family: var(--font-serif);
-  font-size: clamp(2.75rem, 5.5vw, 5.5rem);
+  font-size: var(--text-hero);
   font-weight: 400;
-  line-height: 0.95;
+  line-height: var(--text-hero-lh);
   color: var(--color-ink);
   margin: 0;
 }
@@ -76,14 +76,14 @@
 
 /* ── Hero ── */
 .about-hero {
-  padding-top: calc(var(--navbar-height) + clamp(2rem, 5vh, 4rem));
-  padding-bottom: clamp(4rem, 8vh, 6rem);
+  padding-top: 0;
+  padding-bottom: var(--hero-bottom-gap);
 }
 
 .about-hero__inner {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(0, 1.38fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 3.5rem);
   align-items: start;
 }
 
@@ -99,10 +99,14 @@
 .about-work__copy,
 .about-skills__copy,
 .about-think__body {
-  font-size: 16px;
+  font-size: var(--text-body);
   line-height: 1.65;
   color: var(--color-ink-400);
   margin: 0;
+}
+
+.about-hero__copy {
+  font-size: var(--text-hero-support);
 }
 
 .about-hero__copy p,
@@ -117,7 +121,7 @@
 
 .about-hero__pull {
   font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  font-size: 1.5rem;
   line-height: 1.32;
   color: var(--color-vermilion);
   margin: 0;
@@ -129,12 +133,19 @@
 
 .about-hero__visual {
   min-width: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .about-hero__composition {
   position: relative;
-  width: min(437px, 100%);
+  width: min(400px, 100%);
   margin-left: auto;
+}
+
+.about-hero .about-page__eyebrow {
+  font-size: 16px;
 }
 
 .about-hero__portrait {
@@ -605,6 +616,12 @@
   padding-inline-start: 0;
 }
 
+@media (max-height: 900px) and (min-width: 769px) {
+  .about-hero__composition {
+    width: min(var(--hero-art-max-compact), 100%);
+  }
+}
+
 /* ── Tablet ── */
 @media (min-width: 768px) and (max-width: 1024px) {
   .about-hero__inner,
@@ -622,12 +639,17 @@
     font-size: clamp(2rem, 3.8vw, 3rem);
   }
 
+  .about-hero__inner {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+    gap: clamp(1rem, 2.5vw, 2rem);
+  }
+
   .about-hero__visual {
     min-height: 0;
   }
 
   .about-hero__composition {
-    width: min(320px, 100%);
+    width: min(var(--hero-art-max-tablet), 100%);
   }
 
   .about-think__layout {
@@ -659,7 +681,7 @@
   }
 
   .about-hero {
-    padding-top: calc(var(--navbar-height) + clamp(1.25rem, 4vh, 2rem));
+    padding-top: 0;
   }
 
   .about-skills {
@@ -686,12 +708,17 @@
     max-width: none;
   }
 
+  .about-hero .about-page__eyebrow {
+    font-size: 14px;
+  }
+
   .about-hero__visual {
     min-height: 0;
+    justify-content: center;
   }
 
   .about-hero__composition {
-    width: min(280px, 100%);
+    width: min(var(--hero-art-max-mobile), 100%);
     margin-inline: auto;
   }
 
@@ -751,6 +778,16 @@
 
   .about-avail__copy {
     margin-bottom: 0.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero .about-page__display {
+    font-size: clamp(2.25rem, 10vw, 2.75rem);
+  }
+
+  .about-hero__pull {
+    font-size: 1.25rem;
   }
 }
 
