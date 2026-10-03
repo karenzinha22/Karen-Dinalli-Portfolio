@@ -1,22 +1,20 @@
 import { useEffect, useState } from 'react';
+import { Link, NavLink } from 'react-router';
 import { useScrolled } from '../../hooks/useScrolled';
 import './Navbar.css';
 
 type NavItem = {
   label: string;
-  href: string;
+  to: string;
   id: string;
+  end?: boolean;
 };
 
 const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', href: '#home', id: 'home' },
-  { label: 'Projects', href: '#projects', id: 'projects' },
-  { label: 'About', href: '#about', id: 'about' },
+  { label: 'Home', to: '/', id: 'home', end: true },
+  { label: 'Projects', to: '/projects', id: 'projects' },
+  { label: 'About', to: '/about', id: 'about' },
 ];
-
-type NavbarProps = {
-  activeSection?: string;
-};
 
 function MenuIcon() {
   return (
@@ -58,7 +56,7 @@ function CloseIcon() {
   );
 }
 
-export function Navbar({ activeSection = 'home' }: NavbarProps) {
+export function Navbar() {
   const scrolled = useScrolled();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -88,8 +86,8 @@ export function Navbar({ activeSection = 'home' }: NavbarProps) {
       role="banner"
     >
       <div className="page-container navbar__inner">
-        <a
-          href="#home"
+        <Link
+          to="/"
           className="navbar__logo"
           aria-label="Karen Dinalli — Home"
           onClick={closeMenu}
@@ -101,24 +99,23 @@ export function Navbar({ activeSection = 'home' }: NavbarProps) {
             width={157}
             height={14}
           />
-        </a>
+        </Link>
 
         <nav className="navbar__nav navbar__nav--desktop" aria-label="Main navigation">
           <ul className="navbar__list">
-            {NAV_ITEMS.map((item) => {
-              const isActive = activeSection === item.id;
-              return (
-                <li key={item.id}>
-                  <a
-                    href={item.href}
-                    className={`navbar__link${isActive ? ' navbar__link--active' : ''}`}
-                    aria-current={isActive ? 'page' : undefined}
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              );
-            })}
+            {NAV_ITEMS.map((item) => (
+              <li key={item.id}>
+                <NavLink
+                  to={item.to}
+                  end={item.end}
+                  className={({ isActive }) =>
+                    `navbar__link${isActive ? ' navbar__link--active' : ''}`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </nav>
 
@@ -148,8 +145,8 @@ export function Navbar({ activeSection = 'home' }: NavbarProps) {
           onClick={(event) => event.stopPropagation()}
         >
           <div className="page-container navbar__mobile-header">
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="navbar__logo"
               aria-label="Karen Dinalli — Home"
               onClick={closeMenu}
@@ -161,7 +158,7 @@ export function Navbar({ activeSection = 'home' }: NavbarProps) {
                 width={157}
                 height={14}
               />
-            </a>
+            </Link>
             <button
               type="button"
               className="navbar__menu-toggle"
@@ -174,21 +171,20 @@ export function Navbar({ activeSection = 'home' }: NavbarProps) {
 
           <nav className="navbar__mobile-nav" aria-label="Mobile navigation">
             <ul className="navbar__mobile-list">
-              {NAV_ITEMS.map((item) => {
-                const isActive = activeSection === item.id;
-                return (
-                  <li key={item.id}>
-                    <a
-                      href={item.href}
-                      className={`navbar__mobile-link${isActive ? ' navbar__mobile-link--active' : ''}`}
-                      aria-current={isActive ? 'page' : undefined}
-                      onClick={closeMenu}
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                );
-              })}
+              {NAV_ITEMS.map((item) => (
+                <li key={item.id}>
+                  <NavLink
+                    to={item.to}
+                    end={item.end}
+                    className={({ isActive }) =>
+                      `navbar__mobile-link${isActive ? ' navbar__mobile-link--active' : ''}`
+                    }
+                    onClick={closeMenu}
+                  >
+                    {item.label}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
