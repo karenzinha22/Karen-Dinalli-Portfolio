@@ -23,7 +23,7 @@ export const projects: Project[] = [
       ],
     },
     ctaLabel: 'VIEW CASE STUDY',
-    ctaHref: '#webportal',
+    ctaHref: '/projects/webportal',
     imageSrc: '/images/projects/webportal.png',
     imageAlt: 'WebPortal interface mockup with editorial year graphic',
   },

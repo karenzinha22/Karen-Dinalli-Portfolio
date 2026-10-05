@@ -1,0 +1,16 @@
+export const assets = {
+  hero: '/images/case-studies/webportal/hero.png',
+  oldScreensDesktop: '/images/case-studies/webportal/old-screens-desktop.svg',
+  oldScreensMobile: '/images/case-studies/webportal/old-screens-mobile.svg',
+  audit0: '/images/case-studies/webportal/audit-0.svg',
+  audit1: '/images/case-studies/webportal/audit-1.svg',
+  audit2: '/images/case-studies/webportal/audit-2.svg',
+  audit3: '/images/case-studies/webportal/audit-3.svg',
+  timeline: '/images/case-studies/webportal/timeline.svg',
+  ia: '/images/case-studies/webportal/ia-1.svg',
+  searchDesktop: '/images/case-studies/webportal/search-desktop.svg',
+  searchMobile: '/images/case-studies/webportal/search-mobile.svg',
+  overviewDesktop: '/images/case-studies/webportal/overview-desktop.svg',
+  overviewMobile: '/images/case-studies/webportal/overview-mobile.svg',
+  meeting: '/images/case-studies/webportal/meeting.png',
+};
