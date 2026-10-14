@@ -1,8 +1,13 @@
+import { useHref } from 'react-router';
 import { Button } from '../Button/Button';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 import type { DescriptionPart, Project } from './types';
 import { Divider } from './Divider';
 import './Projects.css';
+
+function isInAppPath(href: string) {
+  return href.startsWith('/') && !href.startsWith('//');
+}
 
 type ProjectCardProps = {
   project: Project;
@@ -33,10 +38,13 @@ function renderParagraph(parts: string | DescriptionPart[], accent: Project['acc
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const ref = useScrollReveal<HTMLElement>();
-  const projectHref =
+  const rawHref =
     project.ctaIcon === false
       ? undefined
       : (project.ctaHref ?? `#${project.id}`);
+  const appPath = rawHref && isInAppPath(rawHref) ? rawHref : null;
+  const routedHref = useHref(appPath ?? '/');
+  const projectHref = rawHref === undefined ? undefined : appPath ? routedHref : rawHref;
 
   return (
     <article
