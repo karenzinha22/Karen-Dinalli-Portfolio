@@ -15,9 +15,11 @@ function ScrollToTop() {
   return null;
 }
 
+const routerBasename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename || undefined}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
