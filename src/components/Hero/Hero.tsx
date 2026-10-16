@@ -28,7 +28,7 @@ export function Hero() {
                 <Button variant="primary" href="#projects" icon={false}>
                   VIEW PROJECTS
                 </Button>
-                <Button variant="secondary" href="#about" arrowDirection="right">
+                <Button variant="secondary" href="/about" arrowDirection="right">
                   ABOUT ME
                 </Button>
               </div>
