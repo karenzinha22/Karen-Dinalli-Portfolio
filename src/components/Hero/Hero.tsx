@@ -25,7 +25,7 @@ export function Hero() {
               </p>
 
               <div className="hero__actions animate-fade-up" data-delay="4">
-                <Button variant="primary" href="#projects" icon={false}>
+                <Button variant="primary" href="/projects" icon={false}>
                   VIEW PROJECTS
                 </Button>
                 <Button variant="secondary" href="/about" arrowDirection="right">

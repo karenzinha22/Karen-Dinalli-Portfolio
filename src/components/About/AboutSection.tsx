@@ -67,7 +67,7 @@ export function AboutSection() {
               <div className="about-section__cta-wrap reveal-stagger" data-delay="6">
                 <Button
                   variant="secondary"
-                  href="#about"
+                  href="/about"
                   arrowDirection="right"
                   icon
                   className="about-section__cta button--flush-start"
