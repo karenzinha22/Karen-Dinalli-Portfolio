@@ -1,4 +1,5 @@
 import { Button } from '../Button/Button';
+import { Divider } from '../Projects/Divider';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 import { cvHref, experience, linkedInHref } from './aboutPageData';
 
@@ -10,7 +11,10 @@ export function AboutExperience() {
     <section className="about-work" aria-labelledby="about-work-heading">
       <div className="page-container about-work__inner">
         <div ref={contentRef} className="about-work__content reveal">
-          <p className="about-page__eyebrow reveal-stagger">THE WORK</p>
+          <div className="about-page__label-row">
+            <p className="about-page__eyebrow reveal-stagger">THE WORK</p>
+            <Divider variant="full" className="about-page__label-line" />
+          </div>
 
           <h2 id="about-work-heading" className="about-page__display about-page__display--section reveal-stagger" data-delay="2">
             <span>From pixels to product</span>

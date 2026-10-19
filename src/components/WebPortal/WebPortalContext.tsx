@@ -1,5 +1,9 @@
 import { H, Label } from './WebPortalPrimitives';
+import { WebPortalLightbox } from './WebPortalLightbox';
 import { assets } from './webportalAssets';
+
+const oldScreensAlt =
+  'Legacy Web Portal screens and key challenges: brand experience misalignment, outdated UI and interaction patterns, high cognitive load in complex workflows, limited scalability, accessibility and access issues, and inability to support future-ready experiences';
 
 export function WebPortalContext() {
   return (
@@ -98,10 +102,12 @@ export function WebPortalProblem() {
         </p>
 
         <div className="wp-old-screens">
-          <img
-            src={assets.oldScreensDesktop}
-            alt="Legacy Web Portal screens and key challenges: brand experience misalignment, outdated UI and interaction patterns, high cognitive load in complex workflows, limited scalability, accessibility and access issues, and inability to support future-ready experiences"
-          />
+          <img className="wp-d" src={assets.oldScreensDesktop} alt={oldScreensAlt} />
+          <div className="wp-m">
+            <WebPortalLightbox src={assets.oldScreensMobile} alt={oldScreensAlt}>
+              <img src={assets.oldScreensMobile} alt={oldScreensAlt} />
+            </WebPortalLightbox>
+          </div>
         </div>
       </div>
     </section>

@@ -150,6 +150,13 @@
     gap: clamp(1.5rem, 4vh, 2.5rem);
   }
 
+  .projects-hero__content,
+  .projects-hero__intro {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
   .projects-hero__content {
     gap: clamp(20px, 3vh, 28px);
     max-width: none;
@@ -161,14 +168,28 @@
 
   .projects-hero__eyebrow {
     font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .projects-hero__headline {
+    font-size: clamp(2.25rem, 10vw, 2.75rem);
+    line-height: var(--text-hero-lh);
+  }
+
+  .projects-hero__copy {
+    font-size: var(--text-body-lg);
+    line-height: 1.65;
+    max-width: 36rem;
+    text-align: center;
   }
 
   .projects-hero__visual {
     justify-content: center;
+    width: 100%;
   }
 
   .projects-hero__image {
-    width: min(var(--hero-art-max-mobile), 100%);
+    width: min(var(--hero-art-max-mobile), 78vw);
     margin-inline: auto;
   }
 }

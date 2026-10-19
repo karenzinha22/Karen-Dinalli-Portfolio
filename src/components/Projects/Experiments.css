@@ -161,6 +161,17 @@
     padding-block: clamp(3rem, 8vh, 4.5rem);
   }
 
+  .experiments__intro {
+    align-items: center;
+    text-align: center;
+    max-width: none;
+    width: 100%;
+  }
+
+  .experiments__copy {
+    max-width: 36rem;
+  }
+
   .experiments__grid {
     grid-template-columns: 1fr;
     max-width: 420px;

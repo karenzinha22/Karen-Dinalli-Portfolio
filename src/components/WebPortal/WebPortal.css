@@ -287,6 +287,7 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .wp-band {
@@ -697,6 +698,10 @@
   .wp-progress__pills {
     flex-direction: column;
     align-items: center;
+  }
+
+  .wp-old-screens .wp-lightbox-trigger {
+    width: 100%;
   }
 }
 
