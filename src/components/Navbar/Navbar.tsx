@@ -82,7 +82,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}
+      className={`navbar${scrolled ? ' navbar--scrolled' : ''}${menuOpen ? ' navbar--menu-open' : ''}`}
       role="banner"
     >
       <div className="page-container navbar__inner">

@@ -119,12 +119,22 @@
   backdrop-filter: blur(8px);
 }
 
+/* backdrop-filter on the bar makes it the containing block for the
+   fixed overlay, so after scroll the menu only covers the 80px header
+   and page content shows through the links. Drop the filter while open. */
+.navbar--menu-open {
+  z-index: 1000;
+  background-color: var(--color-paper);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
 /* Mobile menu overlay */
 .navbar__mobile-overlay {
   position: fixed;
   inset: 0;
   z-index: 200;
-  background-color: rgba(32, 32, 30, 0.12);
+  background-color: var(--color-paper);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

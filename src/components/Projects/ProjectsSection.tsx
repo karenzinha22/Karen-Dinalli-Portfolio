@@ -35,7 +35,7 @@ export function ProjectsSection() {
             ))}
 
             <div className="projects-section__footer">
-              <Button variant="primary" href="#projects" icon={false}>
+              <Button variant="primary" href="/projects" icon={false}>
                 VIEW ALL PROJECTS
               </Button>
             </div>

@@ -394,7 +394,7 @@
   }
 
   .project-intro__headline {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.1;
   }
 
@@ -450,7 +450,8 @@
   }
 
   .project-card__statement {
-    font-size: clamp(1.5rem, 6vw, 2rem);
+    font-size: clamp(1.75rem, 6vw, 2rem);
+    line-height: 1.2;
   }
 
   .project-card__image-frame {

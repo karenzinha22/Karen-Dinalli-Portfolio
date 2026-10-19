@@ -258,16 +258,24 @@
     margin-inline: auto;
   }
 
+  .about-transition__headline {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
   .about-section__title {
     font-size: clamp(2.25rem, 10vw, 2.75rem);
   }
 
-  .about-section__intro {
-    font-size: clamp(1.125rem, 4vw, 1.5rem);
+  .about-section__intro,
+  .about-section__closing {
+    font-size: var(--text-body-lg);
+    line-height: 1.32;
   }
 
-  .about-section__closing {
-    font-size: 1.125rem;
+  .about-section__body {
+    font-size: var(--text-body);
+    line-height: 1.65;
   }
 
   .about-section__image-frame {

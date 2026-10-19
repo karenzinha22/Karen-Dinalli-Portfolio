@@ -253,6 +253,15 @@
     font-size: 14px;
   }
 
+  .hero__headline {
+    font-size: clamp(2.25rem, 10vw, 2.75rem);
+  }
+
+  .hero__description {
+    font-size: var(--text-body-lg);
+    line-height: 1.65;
+  }
+
   .hero__actions {
     gap: 16px;
     justify-content: center;
@@ -278,17 +287,6 @@
     height: auto;
     max-height: none;
     aspect-ratio: 437 / 559;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero__headline {
-    font-size: clamp(2.25rem, 10vw, 2.75rem);
-  }
-
-  .hero__description {
-    font-size: 1.0625rem;
-    padding-top: 8px;
   }
 }
 
