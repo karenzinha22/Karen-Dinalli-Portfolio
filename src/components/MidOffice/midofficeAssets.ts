@@ -1,0 +1,28 @@
+const base = '/images/case-studies/midoffice';
+
+export const assets = {
+  hero: `${base}/midoffice-hero.png`,
+  oldPlatformDesktop: `${base}/old-platform-desktop.png`,
+  oldPlatformMobile: `${base}/old-platform-mobile.png`,
+  audit: `${base}/audit-desktop.svg`,
+  userResearch: `${base}/user-research.png`,
+  affinity: `${base}/affinity-mapping.png`,
+  sketching: `${base}/sketching.png`,
+  caseList: `${base}/case-list.svg`,
+  caseMockup: `${base}/case-mock-up-desktop.svg`,
+  taskList: `${base}/task-list.svg`,
+  taskMockup: `${base}/task-mockup-desktop.svg`,
+  oldDesign: `${base}/old-design.svg`,
+  oldDesignTask: `${base}/old-design-task.svg`,
+  newDesignCase: `${base}/new-design-case.png`,
+  newDesignTask: `${base}/new-design-task.png`,
+  validation: `${base}/validation.png`,
+  finalDesign: `${base}/user-1.svg`,
+  marker: `${base}/icons/marker-target.png`,
+  methodAudit: `${base}/icons/method-audit.png`,
+  methodInterviews: `${base}/icons/method-interviews.png`,
+  methodWorkflow: `${base}/icons/method-workflow.png`,
+  lessonSlow: `${base}/icons/lesson-slow.png`,
+  lessonEvidence: `${base}/icons/lesson-evidence.png`,
+  lessonStrategy: `${base}/icons/lesson-strategy.png`,
+};

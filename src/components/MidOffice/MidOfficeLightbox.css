@@ -1,0 +1,134 @@
+.mo-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.mo-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background: rgba(20, 20, 18, 0.78);
+  cursor: zoom-out;
+}
+
+.mo-lightbox__dialog {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.mo-lightbox__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.mo-lightbox__img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(100%, calc(100vw - 2.5rem));
+  max-height: calc(100vh - 4.5rem);
+}
+
+.mo-lightbox__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 2;
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(245, 241, 232, 0.96);
+  color: #20201e;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .mo-lightbox {
+    padding: 0;
+  }
+
+  .mo-lightbox__dialog {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+  }
+
+  .mo-lightbox__stage {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 8.5rem);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  .mo-lightbox__stage .mo-lightbox__img {
+    max-width: calc(100vw - 1.5rem);
+    max-height: 100%;
+    transform-origin: center center;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .mo-lightbox__tools {
+    position: absolute;
+    right: 0.75rem;
+    bottom: max(0.85rem, env(safe-area-inset-bottom));
+    left: 0.75rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .mo-lightbox__tools button {
+    min-width: 7.25rem;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.65rem 1rem;
+    background: rgba(245, 241, 232, 0.96);
+    color: #20201e;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .mo-lightbox__tools button:disabled {
+    opacity: 0.45;
+    cursor: default;
+  }
+
+  .mo-lightbox__close {
+    top: max(0.75rem, env(safe-area-inset-top));
+    right: 0.75rem;
+  }
+}

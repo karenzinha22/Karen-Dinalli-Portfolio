@@ -4,6 +4,7 @@ import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { WebPortalPage } from './pages/WebPortalPage';
+import { MidOfficePage } from './pages/MidOfficePage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,6 +27,7 @@ export function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/webportal" element={<WebPortalPage />} />
+        <Route path="/projects/midoffice" element={<MidOfficePage />} />
       </Routes>
     </BrowserRouter>
   );

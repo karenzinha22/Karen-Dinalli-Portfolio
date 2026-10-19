@@ -1,0 +1,353 @@
+.midoffice-page {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.mo-hero__subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-ink);
+  margin: 0 0 1rem;
+}
+
+.mo-block {
+  margin-top: clamp(2rem, 5vh, 3rem);
+}
+
+.mo-panel,
+.mo-audit {
+  background: #d8d0c2;
+  border-radius: 20px;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.mo-panel {
+  margin-top: clamp(1.75rem, 4vh, 2.5rem);
+}
+
+.mo-panel + .mo-panel {
+  margin-top: clamp(4.5rem, 7vh, 6rem);
+}
+
+.mo-panel + .wp-outcomes:not(.mo-block) {
+  margin-top: clamp(2rem, 5vh, 3rem);
+}
+
+.midoffice-page .wp-card .wp-outcomes h3 {
+  color: var(--color-ink);
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.mo-audit {
+  margin-top: clamp(1.75rem, 4vh, 2.5rem);
+}
+
+.mo-audit__label {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-400);
+  margin: 0 0 0.85rem;
+}
+
+.mo-marker-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.mo-marker-title img,
+.mo-lesson h3 img {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  object-fit: contain;
+}
+
+.mo-audit .wp-body {
+  text-align: center;
+  max-width: 46rem;
+  margin-inline: auto;
+  margin-bottom: 1.25rem;
+}
+
+.midoffice-page .wp-figure img,
+.midoffice-page .wp-hero__visual img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mo-issues {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.mo-issues li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  border-radius: 14px;
+  padding: 0.7rem 1rem;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.mo-issues .wp-num {
+  width: auto;
+  min-width: 1.85rem;
+  height: 1.85rem;
+  padding-inline: 0.35rem;
+}
+
+.mo-cards-3,
+.mo-cards-2 {
+  display: grid;
+  gap: 1rem;
+}
+
+.mo-cards-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mo-cards-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mo-card-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--color-ink-400);
+  line-height: 1.55;
+}
+
+.mo-card-list li + li {
+  margin-top: 0.35rem;
+}
+
+.mo-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mo-chips li {
+  background: #f6f1e8;
+  border: 1px solid rgba(32, 32, 30, 0.12);
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.mo-plan {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.mo-plan__head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.mo-plan__head::after {
+  content: '';
+  height: 1px;
+  background: var(--color-vermilion);
+  flex: 1;
+}
+
+.mo-plan__title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.mo-plan__items {
+  list-style: none;
+  margin: 0;
+  padding: 0 0.25rem 0 2.35rem;
+  color: var(--color-ink-400);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.mo-methods {
+  margin-top: clamp(1.75rem, 4vh, 2.5rem);
+}
+
+.mo-method {
+  text-align: center;
+}
+
+.mo-method h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  font-size: 1.05rem;
+  margin: 0 0 0.55rem;
+}
+
+.mo-method h3 img {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  object-fit: contain;
+}
+
+.mo-method p {
+  margin: 0;
+  color: var(--color-ink-400);
+  line-height: 1.55;
+}
+
+.mo-keynums {
+  display: grid;
+  gap: 1rem;
+}
+
+.mo-tag {
+  display: inline-block;
+  margin: 0 0 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  background: #d5dde3;
+  color: #24343c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.mo-pullquote {
+  margin: clamp(1.75rem, 4vh, 2.5rem) 0 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.45;
+  color: #6d7c86;
+}
+
+.mo-pullquote cite {
+  display: block;
+  margin-top: 0.45rem;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: 14px;
+  color: var(--color-ink-400);
+}
+
+.mo-dark-note {
+  margin-top: 1rem;
+}
+
+.mo-story {
+  margin: 0 0 1.25rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-vermilion);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.5;
+  color: #6d7c86;
+}
+
+.mo-phase__title {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0 0 0.85rem;
+  color: var(--color-vermilion);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+}
+
+.mo-phase__title .wp-num {
+  width: auto;
+  min-width: 1.85rem;
+  height: 1.85rem;
+  padding-inline: 0.35rem;
+}
+
+.mo-lesson {
+  text-align: center;
+}
+
+.mo-lesson h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: var(--color-vermilion);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 0.55rem;
+}
+
+.mo-lesson p {
+  margin: 0;
+  color: var(--color-ink-400);
+  line-height: 1.55;
+}
+
+@media (max-width: 767px) {
+  .mo-panel + .mo-panel {
+    margin-top: 3rem;
+  }
+
+  .mo-cards-3,
+  .mo-cards-2,
+  .mo-plan {
+    grid-template-columns: 1fr;
+  }
+
+  .mo-keynums {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mo-plan {
+    gap: 1.15rem;
+    margin-left: 0.15rem;
+    padding-left: 0.35rem;
+    border-left: 1px solid var(--color-vermilion);
+  }
+
+  .mo-plan__head::after {
+    content: none;
+  }
+
+  .mo-plan .wp-num {
+    margin-left: -1.2rem;
+    box-shadow: 0 0 0 4px var(--color-paper);
+  }
+
+  .mo-method h3 img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .midoffice-page .wp-lightbox-trigger {
+    width: 100%;
+  }
+}

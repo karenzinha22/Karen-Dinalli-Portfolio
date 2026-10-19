@@ -267,7 +267,9 @@
 }
 
 .wp-hero__visual {
+  width: min(100%, 838px);
   margin-top: clamp(2.5rem, 6vh, 4rem);
+  margin-inline: auto;
 }
 
 .wp-hero__visual img,

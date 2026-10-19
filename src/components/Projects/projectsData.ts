@@ -50,7 +50,7 @@ export const projects: Project[] = [
       ],
     },
     ctaLabel: 'VIEW CASE STUDY',
-    ctaHref: '#midoffice',
+    ctaHref: '/projects/midoffice',
     imageSrc: '/images/projects/midoffice.png',
     imageAlt: 'MidOffice interface mockup with editorial year graphic',
   },
