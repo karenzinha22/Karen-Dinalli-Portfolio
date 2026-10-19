@@ -13,14 +13,6 @@
   margin: 0;
 }
 
-.about-page__label-row {
-  display: contents;
-}
-
-.about-page .about-page__label-line {
-  display: none;
-}
-
 .about-page__display {
   font-family: var(--font-serif);
   font-size: var(--text-hero);
@@ -41,12 +33,6 @@
 .about-page__accent {
   color: var(--color-vermilion);
   display: inline;
-}
-
-.about-page__rule {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(32, 32, 30, 0.14);
 }
 
 .about-page .reveal .reveal-stagger {
@@ -180,7 +166,7 @@
 
 /* ── Inspirations ── */
 .about-inspire {
-  padding-block: clamp(3rem, 8vh, 5.5rem);
+  padding-block: clamp(4rem, 10vh, 7rem);
 }
 
 .about-inspire__inner {
@@ -270,30 +256,9 @@
   opacity: 1;
 }
 
-/* ── Quote ── */
-.about-quote {
-  padding-block: clamp(0.5rem, 2vh, 1rem);
-}
-
-.about-quote__block {
-  margin: 0;
-  padding: clamp(3.5rem, 9vh, 6.5rem) 1rem;
-  text-align: center;
-}
-
-.about-quote__block p {
-  font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 400;
-  line-height: 1.32;
-  color: var(--color-ink);
-  margin: 0 auto;
-  max-width: 46rem;
-}
-
 /* ── Experience ── */
 .about-work {
-  padding-block: clamp(3.5rem, 8vh, 6rem);
+  padding-block: clamp(4rem, 10vh, 7rem);
 }
 
 .about-work__inner {
@@ -304,7 +269,7 @@
 }
 
 .about-work__timeline {
-  padding-top: clamp(1.75rem, 4vh, 3.25rem);
+  padding-top: 0;
 }
 
 .about-work__content {
@@ -388,7 +353,7 @@
 
 /* ── How I think ── */
 .about-think {
-  padding-block: clamp(4.5rem, 10vh, 8rem);
+  padding-block: clamp(4rem, 10vh, 7rem);
 }
 
 .about-think__layout {
@@ -452,7 +417,7 @@
 
 /* ── Skills ── */
 .about-skills {
-  padding-top: clamp(5rem, 12vh, 8.5rem);
+  padding-top: clamp(4rem, 10vh, 7rem);
   padding-bottom: clamp(3.5rem, 8vh, 6rem);
 }
 
@@ -593,7 +558,7 @@
 
 .about-avail__card {
   display: grid;
-  grid-template-columns: 206px minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr);
   column-gap: 1.5rem;
   align-items: stretch;
   overflow: hidden;
@@ -605,21 +570,19 @@
 
 .about-avail__visual {
   position: relative;
-  width: 206px;
+  height: 100%;
+  width: auto;
   min-height: 228px;
+  aspect-ratio: 231 / 240;
   overflow: hidden;
-  background-color: #efe8dc;
+  background-color: #f5f1e8;
 }
 
 .about-avail__image {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: left center;
-  filter: none;
-  mix-blend-mode: normal;
-  opacity: 1;
+  object-fit: contain;
 }
 
 .about-avail__content {
@@ -736,12 +699,18 @@
     padding-block: clamp(2.75rem, 7vh, 4rem);
   }
 
+  .about-inspire,
+  .about-work,
+  .about-think,
+  .about-skills {
+    padding-top: clamp(3rem, 8vh, 5rem);
+  }
+
   .about-hero {
     padding-top: 0;
   }
 
   .about-skills {
-    padding-top: clamp(2.75rem, 7vh, 4rem);
     padding-bottom: clamp(2.75rem, 6vh, 3.5rem);
   }
 
@@ -847,38 +816,11 @@
     margin-inline: auto;
   }
 
-  .about-page__label-row {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    gap: 1.5rem;
-    width: 100%;
-    text-align: left;
-  }
-
-  .about-page__label-row .about-page__eyebrow {
-    flex-shrink: 0;
-    white-space: nowrap;
-  }
-
-  .about-page .about-page__label-line {
-    display: block;
-    flex: 1;
-    width: auto;
-    min-width: 0;
-  }
-
   .about-inspire__visual,
   .about-inspire__collect,
   .about-inspire__collect-text {
     width: 100%;
     text-align: center;
-  }
-
-  .about-quote__block {
-    padding-block: clamp(2.5rem, 8vh, 4rem);
-    padding-inline: 0;
   }
 
   .about-work__copy {
@@ -1056,22 +998,16 @@
 
   .about-avail__card {
     grid-template-columns: 1fr;
-    justify-items: center;
     width: 100%;
     max-width: 22.5rem;
     margin-inline: auto;
-    padding-top: 1.15rem;
   }
 
   .about-avail__visual {
-    width: min(176px, 56%);
+    width: 100%;
+    height: auto;
     min-height: 0;
-    aspect-ratio: 206 / 228;
-    margin-inline: auto;
-  }
-
-  .about-avail__image {
-    object-position: left center;
+    aspect-ratio: 231 / 240;
   }
 
   .about-avail__content {

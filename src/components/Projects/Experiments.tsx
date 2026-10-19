@@ -1,4 +1,5 @@
 import { Button } from '../Button/Button';
+import { SelectedWorkHeader } from './SelectedWorkHeader';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 import { experiments } from './experimentsData';
 import './Experiments.css';
@@ -9,9 +10,10 @@ export function Experiments() {
 
   return (
     <section className="experiments" aria-labelledby="experiments-heading">
-      <div className="page-container">
+      <div className="page-container projects-section__inner">
+        <SelectedWorkHeader label="EXPERIMENTS" headingId="experiments-label" />
+        <div className="experiments__body">
         <div ref={introRef} className="experiments__intro reveal">
-          <p className="experiments__eyebrow reveal-stagger">EXPERIMENTS</p>
           <h2 id="experiments-heading" className="experiments__headline reveal-stagger" data-delay="2">
             Design <span className="experiments__accent">playground.</span>
           </h2>
@@ -55,6 +57,7 @@ export function Experiments() {
               </div>
             </article>
           ))}
+        </div>
         </div>
       </div>
     </section>

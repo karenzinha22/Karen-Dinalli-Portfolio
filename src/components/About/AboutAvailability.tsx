@@ -7,11 +7,18 @@ export function AboutAvailability() {
       <div className="page-container">
         <div className="about-avail__card">
           <div className="about-avail__visual">
-            <img
-              src="/images/about/availability-visual.png"
-              alt="Editorial portrait of Karen seated with a red geometric overlay"
+            <svg
               className="about-avail__image"
-            />
+              viewBox="12 6 231 240"
+              role="img"
+              aria-label="Editorial portrait of Karen seated with a red geometric overlay"
+            >
+              <image
+                href="/images/about/availability-card.svg"
+                width="1168"
+                height="264"
+              />
+            </svg>
           </div>
 
           <div className="about-avail__content">

@@ -4,6 +4,7 @@ import { Experiments } from '../components/Projects/Experiments';
 import { ProjectCard } from '../components/Projects/ProjectCard';
 import { ProjectsHero } from '../components/Projects/ProjectsHero';
 import { SelectedWorkHeader } from '../components/Projects/SelectedWorkHeader';
+import { EditorialStatement } from '../components/EditorialStatement/EditorialStatement';
 import { projects } from '../components/Projects/projectsData';
 import './ProjectsPage.css';
 
@@ -29,18 +30,12 @@ export function ProjectsPage() {
           </div>
         </section>
 
-        <section className="projects-quote" aria-label="Editorial quote">
-          <div className="page-container">
-            <div className="projects-page__rule" />
-            <blockquote className="projects-quote__block">
-              <p>
-                Make complex things feel considered.{' '}
-                <span className="projects-page__accent">Clarity creates momentum.</span>
-              </p>
-            </blockquote>
-            <div className="projects-page__rule" />
-          </div>
-        </section>
+        <EditorialStatement>
+          Make complex things feel considered.{' '}
+          <span className="editorial-statement__accent">
+            Clarity creates momentum.
+          </span>
+        </EditorialStatement>
 
         <Experiments />
       </main>

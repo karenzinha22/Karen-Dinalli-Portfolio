@@ -1,4 +1,4 @@
-import { Divider } from '../Projects/Divider';
+import { SelectedWorkHeader } from '../Projects/SelectedWorkHeader';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 import { dailyTools, skillColumns } from './aboutPageData';
 
@@ -21,13 +21,11 @@ export function AboutSkills() {
 
   return (
     <section className="about-skills" aria-labelledby="about-skills-heading">
-      <div className="page-container">
+      <div className="page-container projects-section__inner">
+        <SelectedWorkHeader label="TOOLS & SKILLS" headingId="about-skills-label" />
+        <div className="about-skills__body">
         <div className="about-skills__top">
           <div ref={introRef} className="about-skills__intro reveal">
-            <div className="about-page__label-row">
-              <p className="about-page__eyebrow reveal-stagger">TOOLS & SKILLS</p>
-              <Divider variant="full" className="about-page__label-line" />
-            </div>
             <h2 id="about-skills-heading" className="about-page__display about-page__display--section reveal-stagger" data-delay="2">
               <span>What I</span>
               <span>
@@ -74,6 +72,7 @@ export function AboutSkills() {
               </li>
             ))}
           </ul>
+        </div>
         </div>
       </div>
     </section>

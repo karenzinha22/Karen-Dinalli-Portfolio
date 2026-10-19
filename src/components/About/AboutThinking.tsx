@@ -1,4 +1,4 @@
-import { Divider } from '../Projects/Divider';
+import { SelectedWorkHeader } from '../Projects/SelectedWorkHeader';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 import { principles } from './aboutPageData';
 
@@ -8,12 +8,10 @@ export function AboutThinking() {
 
   return (
     <section className="about-think" aria-labelledby="about-think-heading">
-      <div className="page-container about-think__layout">
+      <div className="page-container projects-section__inner">
+        <SelectedWorkHeader label="HOW I THINK" headingId="about-think-label" />
+        <div className="about-think__layout">
         <div ref={headingRef} className="about-think__intro reveal">
-          <div className="about-page__label-row">
-            <p className="about-page__eyebrow reveal-stagger">HOW I THINK</p>
-            <Divider variant="full" className="about-page__label-line" />
-          </div>
           <h2 id="about-think-heading" className="about-page__display about-page__display--section reveal-stagger" data-delay="2">
             <span>Make sense</span>
             <span>
@@ -30,6 +28,7 @@ export function AboutThinking() {
               <p className="about-think__body">{item.body}</p>
             </article>
           ))}
+        </div>
         </div>
       </div>
     </section>

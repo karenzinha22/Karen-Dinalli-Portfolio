@@ -1,0 +1,31 @@
+.editorial-statement {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.editorial-statement__quote {
+  margin: 0;
+  padding-block: clamp(3.5rem, 9vh, 6.5rem);
+  text-align: center;
+}
+
+.editorial-statement__text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  line-height: 1.32;
+  color: var(--color-paper);
+  margin: 0 auto;
+  max-width: min(46rem, 100%);
+  text-wrap: pretty;
+}
+
+.editorial-statement__accent {
+  color: var(--color-ochre);
+}
+
+@media (max-width: 767px) {
+  .editorial-statement__quote {
+    padding-block: clamp(2.5rem, 8vh, 4rem);
+  }
+}

@@ -1,4 +1,4 @@
-import { Divider } from '../Projects/Divider';
+import { SelectedWorkHeader } from '../Projects/SelectedWorkHeader';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 export function AboutInspirations() {
@@ -8,13 +8,10 @@ export function AboutInspirations() {
 
   return (
     <section className="about-inspire" aria-labelledby="about-inspire-heading">
-      <div className="page-container about-inspire__inner">
+      <div className="page-container projects-section__inner">
+        <SelectedWorkHeader label="WHAT SHAPES MY EYE" headingId="about-inspire-label" />
+        <div className="about-inspire__inner">
         <div ref={contentRef} className="about-inspire__content reveal">
-          <div className="about-page__label-row">
-            <p className="about-page__eyebrow reveal-stagger">WHAT SHAPES MY EYE</p>
-            <Divider variant="full" className="about-page__label-line" />
-          </div>
-
           <h2 id="about-inspire-heading" className="about-page__display about-page__display--section reveal-stagger" data-delay="2">
             <span>
               I find <span className="about-page__accent">inspirations</span> in
@@ -57,6 +54,7 @@ export function AboutInspirations() {
               <span className="about-page__accent">references.</span>
             </span>
           </p>
+        </div>
         </div>
       </div>
     </section>
