@@ -1,7 +1,7 @@
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 
-const repoBase = '/Karen-Dinalli-Portfolio/';
+const repoBase = '/';
 
 function prefixPublicAssets(base: string): Plugin {
   return {
