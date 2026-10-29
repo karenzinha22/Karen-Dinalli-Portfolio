@@ -11,11 +11,11 @@ export function WebPortalTakeaways() {
         </Label>
         <div className="wp-stack">
           <article className="wp-card wp-takeaway">
-            <h3>MVP LAUNCH & PRODUCT DIRECTION</h3>
+            <h3>MVP SCOPE & PRODUCT DIRECTION</h3>
             <p className="wp-body">
               Owned UX and product direction for the Web Portal MVP, aligning user needs, business
-              goals, and technical constraints. Partnered with engineering to prioritise and
-              deliver high-impact features based on early user feedback.
+              goals, and technical constraints. Partnered with engineering to prioritise
+              high-impact features based on early user feedback.
             </p>
           </article>
           <article className="wp-card wp-takeaway">
@@ -29,8 +29,8 @@ export function WebPortalTakeaways() {
             <h3>PRODUCT STRATEGY & VALUE DEFINITION</h3>
             <p className="wp-body">
               Collaborated with stakeholders to define the Web Portal's value proposition,
-              translating user insights into clear product priorities that supported adoption and
-              future scalability.
+              translating user insights into clear product priorities intended to support future
+              scalability.
             </p>
           </article>
         </div>

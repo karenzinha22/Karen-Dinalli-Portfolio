@@ -14,7 +14,7 @@ export function MidOfficeHero() {
         <div className="wp-hero__rule" />
 
         <div className="wp-hero__intro">
-          <p className="wp-hero__badge">IN PROGRESS</p>
+          <p className="wp-hero__badge">SHIPPED</p>
           <h1 id="midoffice-heading" className="wp-hero__title">
             MidOffice
           </h1>

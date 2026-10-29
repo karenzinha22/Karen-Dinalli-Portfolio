@@ -18,7 +18,7 @@ export const experiments: Experiment[] = [
     body: 'A dedicated landing page designed to capture qualified leads, improve content discoverability, and increase user engagement.',
     imageSrc: '/images/projects/nomacred.png',
     imageAlt: 'NomaCred landing page shown on a laptop against a glass building',
-    href: '#nomacred',
+    href: 'https://www.behance.net/gallery/111394423/NomaCred',
   },
   {
     id: 'mywave',
@@ -28,7 +28,7 @@ export const experiments: Experiment[] = [
     body: 'A surf app made by surfers, for surfers, connecting user needs with tide, forecast and community.',
     imageSrc: '/images/projects/mywave.png',
     imageAlt: 'MyWave surf app screens showing a welcome view and a forecast feed',
-    href: '#mywave',
+    href: 'https://www.behance.net/gallery/112756523/My-Wave',
   },
   {
     id: 'marbefit',
@@ -38,6 +38,6 @@ export const experiments: Experiment[] = [
     body: 'Habit-building through intelligent nudges, progress visualisation and accountability.',
     imageSrc: '/images/projects/marbefit.png',
     imageAlt: 'MarbeFit app screens showing a weekly workout plan and progress',
-    href: '#marbefit',
+    href: 'https://www.behance.net/gallery/252467261/Marbe-Fit',
   },
 ];

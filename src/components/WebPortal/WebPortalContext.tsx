@@ -125,10 +125,10 @@ export function WebPortalScope() {
               Focusing on what matters most
             </h2>
             <p className="wp-body">
-              As part of Web Portal 2.0, we focused on{' '}
+              As part of Web Portal 2.0, CAMP focused on{' '}
               <H>redesigning Contact & Account Management</H>, the most used and highest-impact
-              area of the platform. This section accounts for around{' '}
-              <H>37% of advisor interactions</H>, making it the highest-impact opportunity to
+              area of the platform. CAMP was designed to address approximately{' '}
+              <H>37% of advisor clicks</H>, making it the highest-impact opportunity to
               improve the overall experience early on.
             </p>
           </div>
@@ -142,7 +142,7 @@ export function WebPortalScope() {
             <article className="wp-card">
               <h3 className="wp-card__title">📊 HIGH USAGE</h3>
               <p className="wp-body">
-                Around <strong>37% of advisor</strong> interactions
+                CAMP was designed to address approximately <strong>37% of advisor clicks</strong>
               </p>
             </article>
             <article className="wp-card">

@@ -11,7 +11,7 @@ const rounds = [
     learned: (
       <>
         Users struggled to quickly identify key information and expected collaboration-related
-        details to be more visible and accessible. <H>42% of users</H> also expressed a need for a
+        details to be more visible and accessible. <H>42% of participants in this round</H> also expressed a need for a
         cleaner, easier-to-scan Case Overview.
       </>
     ),
@@ -25,27 +25,27 @@ const rounds = [
     learned: (
       <>
         Participants found the new structure easier to navigate but wanted quicker ways to find and
-        prioritise tasks. <H>30% of users</H> expressed the need for a faster, more intuitive way
+        prioritise tasks. <H>30% of participants in this round</H> expressed the need for a faster, more intuitive way
         to access their assigned tasks.
       </>
     ),
     changed:
-      'Prioritized personal tasks over grouped task lists, reducing search time and improving focus. A summary card was also added to provide users with key information and actionable insights at a glance.',
+      'Prioritized personal tasks over grouped task lists, aiming to reduce search time and improve focus. A summary card was also added to provide users with key information and actionable insights at a glance.',
   },
 ];
 
 const phaseOne = [
-  'Modernised visual experience and improved consistency across the platform',
-  'Immediate technical improvements without disrupting day-to-day operations',
+  'A modernised visual experience, aimed at greater consistency across the platform',
+  'A technical update that kept day-to-day operations in place',
   'Existing business logic and editing workflows remained unchanged',
   'Users could continue working through familiar legacy dialogs, ensuring a smooth and low-risk transition',
 ];
 
 const phaseTwo = [
-  'Improved user experience through simplified and more intuitive workflows',
-  'Continuous validation through user behaviour analysis and usage metrics',
-  'Iterate design improvements based on real user feedback and insights',
-  'Reduced technical risk by avoiding a full business logic rewrite',
+  'Simpler workflows, aimed at a more intuitive experience',
+  'An approach of validating through user behaviour and usage',
+  'Further iteration based on real user feedback',
+  'Avoided a full business logic rewrite to limit technical risk',
   'All new features and capabilities developed directly within the new application',
 ];
 
@@ -146,13 +146,13 @@ export function MidOfficeStatus() {
   return (
     <section className="wp-section" aria-labelledby="mo-status-heading">
       <div className="page-container">
-        <Label>11 · CURRENT STATUS</Label>
+        <Label>11 · RELEASE APPROACH</Label>
         <h2 id="mo-status-heading" className="wp-h2">
-          Strategy, Approach & Progress
+          Strategy & Approach
         </h2>
         <p className="wp-body">
-          To balance impact and risk, we&apos;re following a structured two-phase migration approach
-          that delivers quick wins while ensuring long-term transformation.
+          To balance impact and risk, the release followed a structured two-phase migration,
+          pairing an early foundation with a longer-term experience transformation.
         </p>
 
         <div className="wp-stack">
@@ -166,7 +166,7 @@ export function MidOfficeStatus() {
               front-end framework while maintaining the existing workflows users were familiar with.
             </p>
             <div className="wp-outcomes">
-              <h3>Key outcomes</h3>
+              <h3>What shipped in this phase</h3>
               <ul>
                 {phaseOne.map((item) => (
                   <li key={item}>{item}</li>
@@ -185,7 +185,7 @@ export function MidOfficeStatus() {
               efficiency.
             </p>
             <div className="wp-outcomes">
-              <h3>Key outcomes</h3>
+              <h3>What this phase included</h3>
               <ul>
                 {phaseTwo.map((item) => (
                   <li key={item}>{item}</li>
@@ -242,8 +242,8 @@ export function MidOfficeReflection() {
               This project was developed in collaboration with product managers, developers,
               researchers, and other designers. The case study focuses on my specific contributions
               and design decisions. Some information has been altered or removed due to
-              confidentiality requirements, but the process and outcomes accurately represent the
-              work completed.
+              confidentiality requirements, but the process and design decisions accurately represent
+              the work completed.
             </li>
             <li>
               Patricia was one of the Product Designers on this project, and her contribution was

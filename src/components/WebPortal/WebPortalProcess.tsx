@@ -153,7 +153,7 @@ export function WebPortalDesign() {
           Multiple accounts listed for selection.
         </p>
         <article className="wp-card wp-outcomes">
-          <h3>SEARCH EXPERIENCE OUTCOMES</h3>
+          <h3>INTENDED SEARCH BENEFITS</h3>
           <ul>
             <li>Instant client discovery with real-time search results as the user types.</li>
             <li>
@@ -188,7 +188,7 @@ export function WebPortalDesign() {
           alerts.
         </p>
         <article className="wp-card wp-outcomes">
-          <h3>CLIENT OVERVIEW OUTCOMES</h3>
+          <h3>INTENDED CLIENT OVERVIEW BENEFITS</h3>
           <ul>
             <li>A single source of truth for all client information.</li>
             <li>Faster account analysis through a clear tabbed interface.</li>

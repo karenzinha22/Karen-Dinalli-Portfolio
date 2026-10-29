@@ -49,6 +49,8 @@ export function Experiments() {
                 <Button
                   variant="secondary"
                   href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   arrowDirection="right"
                   className="experiment-card__cta button--flush-start"
                 >

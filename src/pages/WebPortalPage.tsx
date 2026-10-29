@@ -7,6 +7,7 @@ import {
   WebPortalProblem,
   WebPortalScope,
 } from '../components/WebPortal/WebPortalContext';
+import { WebPortalNavigation } from '../components/WebPortal/WebPortalNavigation';
 import {
   WebPortalResearch,
   WebPortalRole,
@@ -35,6 +36,7 @@ export function WebPortalPage() {
         <WebPortalScope />
         <WebPortalResearch />
         <WebPortalRole />
+        <WebPortalNavigation />
         <WebPortalProcess />
         <WebPortalWorkshop />
         <WebPortalDesign />

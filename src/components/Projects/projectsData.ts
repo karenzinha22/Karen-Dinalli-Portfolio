@@ -13,12 +13,12 @@ export const projects: Project[] = [
       paragraphs: [
         'Web Portal is a strategic redesign of Ohpen’s client portal, turning a legacy interface into a fast, modern, and scalable experience.',
         [
-          { text: 'Built on the same cloud-native architecture as the core platform, ' },
+          { text: 'Built on the same cloud-native architecture as the core platform, it is designed to ' },
           {
-            text: 'it delivers a 50% more responsive UI, enables 4× faster iteration',
+            text: 'make the experience more responsive and enable faster design iteration',
             highlight: true,
           },
-          { text: ', and directly addresses top client pain points.' },
+          { text: ', and to address top client pain points.' },
         ],
       ],
     },
@@ -38,13 +38,13 @@ export const projects: Project[] = [
       paragraphs: [
         'Redesigning the MidOffice Portal, a key platform supporting mortgage origination and contract variations.',
         [
-          { text: 'The new experience ' },
+          { text: 'The new experience was designed to ' },
           {
-            text: 'reduced application processing time by 25%, decreased errors by 30%',
+            text: 'streamline application processing and reduce errors',
             highlight: true,
           },
           {
-            text: ', and streamlined underwriting workflows into a faster, more intuitive experience.',
+            text: ', and to make underwriting workflows faster and more intuitive.',
           },
         ],
       ],
@@ -64,16 +64,16 @@ export const projects: Project[] = [
     description: {
       paragraphs: [
         [
-          { text: 'Designed Credit Manager 2.0 from scratch, improving arrears management by ' },
+          { text: 'Designed Credit Manager 2.0 from scratch to ' },
           {
-            text: 'increasing recovery rates by 18%, reducing case handling time by 30%',
+            text: 'support higher recovery rates and more efficient case handling',
             highlight: true,
           },
-          { text: ', and helping customers stay on track with repayments.' },
+          { text: ', and to help customers stay on track with repayments.' },
         ],
       ],
     },
-    ctaLabel: 'COMING SOON!',
+    ctaLabel: 'IN PRODUCTION',
     ctaIcon: false,
     imageSrc: '/images/projects/credit-manager.png',
     imageAlt: 'Credit Manager interface mockup with editorial year graphic',

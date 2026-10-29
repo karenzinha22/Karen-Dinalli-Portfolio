@@ -7,15 +7,15 @@ const storyOneFeedback = [
   'Surfaced key information and tasks based on user permissions.',
   'Introduced a persistent sidebar for quick navigation.',
   'Enabled direct access to the Case List and Case Overview.',
-  'Reduced clicks and improved workflow efficiency.',
+  'Designed to reduce clicks and improve workflow efficiency.',
 ];
 
 const storyTwoFeedback = [
   'Made the Task page a third entry point from the sidebar menu navigation.',
   'Prioritised Tasks Assigned to Me and Tasks for My Cases.',
   'Provided a clear summary of task status and workload.',
-  'Improved visibility of priorities and upcoming actions.',
-  'Reduced the need to scan through the entire task list to find relevant work.',
+  'Made priorities and upcoming actions more visible.',
+  'Designed to reduce scanning the full task list for relevant work.',
 ];
 
 const screenReasons = [

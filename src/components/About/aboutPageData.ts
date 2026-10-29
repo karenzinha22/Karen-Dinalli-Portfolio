@@ -6,12 +6,12 @@ export const emailHref = footerLinks.find((link) => link.label === 'EMAIL')!.hre
 
 export const experience = [
   {
-    years: '2024 - NOW',
+    years: 'Jul 2023 - NOW',
     company: 'Ohpen',
     role: 'Product Designer',
   },
   {
-    years: '2021 - 2024',
+    years: '2021 - Jul 2023',
     company: 'Ohpen',
     role: 'UX/UI Designer',
   },
