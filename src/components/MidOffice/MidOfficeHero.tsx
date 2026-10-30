@@ -33,7 +33,7 @@ export function MidOfficeHero() {
           </div>
           <div>
             <dt>TEAM</dt>
-            <dd>Product designer, product manager, technical lead, engineering and architect</dd>
+            <dd>2 Product designers, 2 PM's, 1 technical lead, 3 engineers and 1 architect</dd>
           </div>
           <div>
             <dt>SCOPE</dt>

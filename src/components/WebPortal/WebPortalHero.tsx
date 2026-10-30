@@ -36,7 +36,7 @@ export function WebPortalHero() {
           </div>
           <div>
             <dt>TEAM</dt>
-            <dd>Product designer, product manager, technical lead and engineering</dd>
+            <dd>2 Product designers, 1 PM, 1 technical lead and 3 engineers</dd>
           </div>
           <div>
             <dt>SCOPE</dt>
