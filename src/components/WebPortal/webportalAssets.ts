@@ -13,4 +13,15 @@ export const assets = {
   overviewDesktop: '/images/case-studies/webportal/overview-desktop.svg',
   overviewMobile: '/images/case-studies/webportal/overview-mobile.svg',
   meeting: '/images/case-studies/webportal/meeting.png',
+  searchScreens: [
+    { src: '/images/case-studies/webportal/iteration-01-dashboard.png', title: 'Dashboard' },
+    { src: '/images/case-studies/webportal/iteration-02-search.png', title: 'Search' },
+    { src: '/images/case-studies/webportal/iteration-03-auto-complete.png', title: 'Auto-complete' },
+    { src: '/images/case-studies/webportal/iteration-04-result.png', title: 'Search Results' },
+  ],
+  overviewScreens: [
+    { src: '/images/case-studies/webportal/iteration-01-client-overview.png', title: 'Client Overview' },
+    { src: '/images/case-studies/webportal/iteration-02-savings.png', title: 'Savings' },
+    { src: '/images/case-studies/webportal/iteration-03-investements.png', title: 'Investments' },
+  ],
 };

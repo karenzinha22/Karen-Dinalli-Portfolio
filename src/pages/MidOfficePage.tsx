@@ -28,11 +28,11 @@ export function MidOfficePage() {
         <MidOfficeHero />
         <MidOfficeOverview />
         <MidOfficeChallenge />
-        <MidOfficeQuestion />
         <MidOfficeGoals />
         <MidOfficeTeam />
         <MidOfficeResearch />
         <MidOfficeFindings />
+        <MidOfficeQuestion />
         <MidOfficeProcess />
         <MidOfficeScreens />
         <MidOfficeDemo />

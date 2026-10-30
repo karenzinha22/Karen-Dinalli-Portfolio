@@ -130,12 +130,6 @@ export function MidOfficeScreens() {
             alt="Legacy home, dashboard, case list, and case overview before the redesign"
           />
         </div>
-        <div className="mo-panel mo-block">
-          <MidOfficeFigure
-            src={assets.newDesignCase}
-            alt="Redesigned dashboard, case list, and case overview after user feedback"
-          />
-        </div>
         <article className="wp-card wp-outcomes mo-block">
           <h3>BASED ON USER FEEDBACK</h3>
           <ul>
@@ -155,12 +149,6 @@ export function MidOfficeScreens() {
           <MidOfficeFigure
             src={assets.oldDesignTask}
             alt="Legacy task list and check early assessment view before the redesign"
-          />
-        </div>
-        <div className="mo-panel mo-block">
-          <MidOfficeFigure
-            src={assets.newDesignTask}
-            alt="Redesigned task list and check early assessment view after user feedback"
           />
         </div>
         <article className="wp-card wp-outcomes">

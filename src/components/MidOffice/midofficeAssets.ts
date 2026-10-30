@@ -18,6 +18,13 @@ export const assets = {
   newDesignTask: `${base}/new-design-task.png`,
   validation: `${base}/validation.png`,
   finalDesign: `${base}/user-1.svg`,
+  finalScreens: [
+    { src: `${base}/iteration-01-dashboard.png`, title: 'Dashboard' },
+    { src: `${base}/iteration-02-case-list.png`, title: 'Case List' },
+    { src: `${base}/iteration-03-case-overview.png`, title: 'Case Overview' },
+    { src: `${base}/iteration-04-task-list.png`, title: 'Task List' },
+    { src: `${base}/iteration-05-assessment.png`, title: 'Assessment' },
+  ],
   marker: `${base}/icons/marker-target.png`,
   methodAudit: `${base}/icons/method-audit.png`,
   methodInterviews: `${base}/icons/method-interviews.png`,

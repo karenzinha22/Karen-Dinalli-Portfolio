@@ -1,6 +1,25 @@
-import { H, Label, WpPicture } from './WebPortalPrimitives';
+import { H, Label } from './WebPortalPrimitives';
 import { WebPortalLightbox } from './WebPortalLightbox';
 import { assets } from './webportalAssets';
+
+function WebPortalGallery({
+  label,
+  screens,
+}: {
+  label: string;
+  screens: { src: string; title: string }[];
+}) {
+  return (
+    <ul className="wp-gallery" aria-label={label} tabIndex={0}>
+      {screens.map((screen) => (
+        <li key={screen.src} className="wp-gallery__card">
+          <h3 className="wp-card__title">{screen.title}</h3>
+          <img src={screen.src} alt={screen.title} />
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export function WebPortalProcess() {
   return (
@@ -142,24 +161,6 @@ export function WebPortalDesign() {
         </p>
 
         <h3 className="wp-subhead">SEARCH EXPERIENCE</h3>
-        <div className="wp-figure wp-figure--cream">
-          <WebPortalLightbox
-            src={assets.searchDesktop}
-            alt="Search experience flow from client search to results table"
-          >
-            <WpPicture
-              desktop={assets.searchDesktop}
-              mobile={assets.searchMobile}
-              alt="Search experience flow from client search to results table"
-            />
-          </WebPortalLightbox>
-        </div>
-        <p className="wp-flow">
-          <strong>Advisor Search Experience:</strong> The user logs in → Search Client is
-          immediately available → Types to search → Autocomplete suggestions with recent searches
-          appear → Presses Enter to view results → Results table displayed with key columns →
-          Multiple accounts listed for selection.
-        </p>
         <article className="wp-card wp-outcomes">
           <h3>INTENDED SEARCH BENEFITS</h3>
           <ul>
@@ -175,26 +176,9 @@ export function WebPortalDesign() {
             </li>
           </ul>
         </article>
+        <WebPortalGallery label="Search experience screens" screens={assets.searchScreens} />
 
         <h3 className="wp-subhead">CLIENT OVERVIEW EXPERIENCE</h3>
-        <div className="wp-figure wp-figure--cream">
-          <WebPortalLightbox
-            src={assets.overviewDesktop}
-            alt="Client overview experience flow with accounts, KPIs, and related widgets"
-          >
-            <WpPicture
-              desktop={assets.overviewDesktop}
-              mobile={assets.overviewMobile}
-              alt="Client overview experience flow with accounts, KPIs, and related widgets"
-            />
-          </WebPortalLightbox>
-        </div>
-        <p className="wp-flow">
-          <strong>Advisor Client Overview Experience:</strong> Advisor selects a client → Client
-          Overview opens → Left panel lists all associated accounts → Selecting an account updates
-          the right panel → Quick access to client details, accounts, recent activities, documents,
-          alerts.
-        </p>
         <article className="wp-card wp-outcomes">
           <h3>INTENDED CLIENT OVERVIEW BENEFITS</h3>
           <ul>
@@ -207,6 +191,7 @@ export function WebPortalDesign() {
             </li>
           </ul>
         </article>
+        <WebPortalGallery label="Client overview screens" screens={assets.overviewScreens} />
       </div>
     </section>
   );

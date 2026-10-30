@@ -133,10 +133,14 @@ export function MidOfficeFinal() {
           We took into account the key insights from all two rounds, refining our interfaces into
           their final design
         </p>
-        <MidOfficeFigure
-          src={assets.finalDesign}
-          alt="Annotated final design of login, dashboard, case list, and case overview"
-        />
+        <ul className="mo-gallery" aria-label="Final design screens" tabIndex={0}>
+          {assets.finalScreens.map((screen) => (
+            <li key={screen.src} className="mo-gallery__card">
+              <h3 className="wp-card__title">{screen.title}</h3>
+              <img src={screen.src} alt={screen.title} />
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

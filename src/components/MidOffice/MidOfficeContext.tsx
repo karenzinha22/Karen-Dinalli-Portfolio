@@ -128,17 +128,6 @@ export function MidOfficeChallenge() {
               The platform had become increasingly difficult to maintain and no longer matched
               modern user expectations.
             </p>
-            <article className="wp-card">
-              <h3 className="wp-card__title mo-marker-title">
-                <img src={assets.marker} alt="" />
-                Business urgency
-              </h3>
-              <p className="wp-body">
-                To achieve the company&apos;s 2027 vision of becoming <strong>&quot;best in class&quot;</strong>,
-                the platform needed modernization now not incremental fixes. A strategic redesign
-                became unavoidable.
-              </p>
-            </article>
           </div>
           <ol className="mo-issues">
             {limits.map((item, index) => (
