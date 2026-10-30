@@ -124,14 +124,8 @@ export function MidOfficeScreens() {
           As a user, I want immediate access to my most relevant information and actions so that I
           can start working on cases without navigating through multiple screens.
         </blockquote>
-        <div className="mo-panel">
-          <MidOfficeFigure
-            src={assets.oldDesign}
-            alt="Legacy home, dashboard, case list, and case overview before the redesign"
-          />
-        </div>
         <article className="wp-card wp-outcomes mo-block">
-          <h3>BASED ON USER FEEDBACK</h3>
+          <h3>CASE LIST & CASE OVERVIEW</h3>
           <ul>
             {storyOneFeedback.map((item) => (
               <li key={item}>{item}</li>
@@ -145,14 +139,8 @@ export function MidOfficeScreens() {
           environment with auto-advance, so that I can maintain momentum and complete work
           efficiently.
         </blockquote>
-        <div className="mo-panel">
-          <MidOfficeFigure
-            src={assets.oldDesignTask}
-            alt="Legacy task list and check early assessment view before the redesign"
-          />
-        </div>
         <article className="wp-card wp-outcomes">
-          <h3>BASED ON USER FEEDBACK</h3>
+          <h3>TASK LIST</h3>
           <ul>
             {storyTwoFeedback.map((item) => (
               <li key={item}>{item}</li>
