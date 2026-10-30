@@ -32,7 +32,7 @@ export function WebPortalHero() {
         <dl className="wp-meta">
           <div>
             <dt>ROLE</dt>
-            <dd>Product Designer</dd>
+            <dd>Product Designer I</dd>
           </div>
           <div>
             <dt>TEAM</dt>

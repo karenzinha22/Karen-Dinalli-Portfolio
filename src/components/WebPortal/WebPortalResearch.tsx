@@ -1,7 +1,9 @@
+import { WebPortalBand } from './WebPortalContext';
 import { H, Label } from './WebPortalPrimitives';
 
 export function WebPortalResearch() {
   return (
+    <>
     <section className="wp-section" aria-labelledby="wp-research-heading">
       <div className="page-container">
         <Label>4.0 · RESEARCH & DISCOVERY</Label>
@@ -23,7 +25,7 @@ export function WebPortalResearch() {
           <ul className="wp-stats wp-d" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             <li className="wp-card wp-stat">
               <p className="wp-stat__value">12</p>
-              <p className="wp-stat__label">Research sessions</p>
+              <p className="wp-stat__label">internal users interviewed during the initial research</p>
             </li>
             <li className="wp-card wp-stat">
               <p className="wp-stat__value">7</p>
@@ -105,11 +107,15 @@ export function WebPortalResearch() {
             </blockquote>
           </article>
         </div>
-
-        <div className="wp-split" style={{ marginTop: '3rem' }}>
+      </div>
+    </section>
+    <WebPortalBand />
+    <section className="wp-section" aria-labelledby="wp-needs-heading">
+      <div className="page-container">
+        <div className="wp-split">
           <div>
             <p className="wp-kicker wp-kicker--ochre">BASED ON THESE FINDINGS</p>
-            <h2 className="wp-h2">What the new Web Portal needs to be</h2>
+            <h2 id="wp-needs-heading" className="wp-h2">What the new Web Portal needs to be</h2>
           </div>
           <div className="wp-principles">
             <article className="wp-card">
@@ -141,6 +147,7 @@ export function WebPortalResearch() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

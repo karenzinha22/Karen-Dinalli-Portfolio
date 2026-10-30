@@ -2,7 +2,6 @@ import { Navbar } from '../components/Navbar/Navbar';
 import { Footer } from '../components/Footer/Footer';
 import { WebPortalHero } from '../components/WebPortal/WebPortalHero';
 import {
-  WebPortalBand,
   WebPortalContext,
   WebPortalProblem,
   WebPortalScope,
@@ -13,6 +12,7 @@ import {
   WebPortalRole,
 } from '../components/WebPortal/WebPortalResearch';
 import {
+  WebPortalAudit,
   WebPortalDesign,
   WebPortalProcess,
   WebPortalWorkshop,
@@ -31,13 +31,13 @@ export function WebPortalPage() {
       <main className="webportal-page page-start">
         <WebPortalHero />
         <WebPortalContext />
-        <WebPortalBand />
         <WebPortalProblem />
         <WebPortalScope />
         <WebPortalResearch />
         <WebPortalRole />
-        <WebPortalNavigation />
         <WebPortalProcess />
+        <WebPortalNavigation />
+        <WebPortalAudit />
         <WebPortalWorkshop />
         <WebPortalDesign />
         <WebPortalTakeaways />

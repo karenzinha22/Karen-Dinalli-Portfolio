@@ -23,11 +23,10 @@ export function WebPortalNavigation() {
   return (
     <section className="wp-section" aria-labelledby="wp-nav-heading">
       <div className="page-container">
-        <Label>NAVIGATION & INFORMATION ARCHITECTURE</Label>
+        <Label>6.0 · NAVIGATION & INFORMATION ARCHITECTURE</Label>
         <h2 id="wp-nav-heading" className="wp-h2">
           From a confusing menu to a clearer navigation structure
         </h2>
-        <Label>DESIGN PROPOSAL · PENDING VALIDATION</Label>
 
         <h3 className="wp-subhead">1. FULL NAVIGATION AUDIT</h3>
         <p className="wp-body">

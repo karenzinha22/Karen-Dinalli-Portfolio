@@ -22,14 +22,22 @@ export function WebPortalProcess() {
             <img src={assets.timeline} alt="Roadmap Timeline for the Web Portal 2.0 product design work" />
           </WebPortalLightbox>
         </div>
+      </div>
+    </section>
+  );
+}
 
-        <div className="wp-split" style={{ marginTop: 'clamp(2.5rem, 6vh, 4rem)' }}>
+export function WebPortalAudit() {
+  return (
+    <section className="wp-section" aria-labelledby="wp-audit-heading">
+      <div className="page-container">
+        <div className="wp-split">
           <div>
-            <p className="wp-kicker wp-d">5.1 · AUDIT (RUNNING IN PARALLEL)</p>
-            <p className="wp-kicker wp-m">5.1 · UX FOUNDATION</p>
-            <h2 className="wp-h2">UX audit of the platform</h2>
+            <p className="wp-kicker wp-d">6.1 · AUDIT (RUNNING IN PARALLEL)</p>
+            <p className="wp-kicker wp-m">6.1 · PART 2 OF THE AUDIT</p>
+            <h2 id="wp-audit-heading" className="wp-h2">UX audit of the platform</h2>
             <p className="wp-body">
-              Alongside research, I performed a continuous UX audit of the platform.
+              Alongside the navigation audit, user research, and card sorting, I also conducted an ongoing UX audit of the platform.
             </p>
           </div>
           <div className="wp-stack">
@@ -52,7 +60,7 @@ export function WebPortalProcess() {
 
         <div className="wp-split" style={{ marginTop: 'clamp(2.5rem, 6vh, 4rem)' }}>
           <div>
-            <p className="wp-kicker">5.2 · IA</p>
+            <p className="wp-kicker">6.2 · IA</p>
             <h2 className="wp-h2">First mockups</h2>
             <p className="wp-body">
               With a clear understanding of user needs for this first phase, I translated the
@@ -93,7 +101,7 @@ export function WebPortalWorkshop() {
       <div className="page-container">
         <Label>
           <span className="wp-d-inline">UX VALIDATION WORKSHOP</span>
-          <span className="wp-m-inline">6.0 · VALIDATION WORKSHOP</span>
+          <span className="wp-m-inline">7.0 · VALIDATION WORKSHOP</span>
         </Label>
         <div className="wp-workshop">
           <div>
@@ -126,7 +134,7 @@ export function WebPortalDesign() {
       <div className="page-container">
         <Label id="wp-design-heading">
           <span className="wp-d-inline">DESIGN</span>
-          <span className="wp-m-inline">7.0 · DESIGN</span>
+          <span className="wp-m-inline">8.0 · DESIGN</span>
         </Label>
         <p className="wp-body wp-center">
           Turning insights from user interviews, UX validation, and design alignment into a real

@@ -7,15 +7,15 @@ export function WebPortalTakeaways() {
       <div className="page-container">
         <Label id="wp-takeaways-heading">
           <span className="wp-d-inline">TAKEAWAYS</span>
-          <span className="wp-m-inline">8.0 · TAKEAWAYS</span>
+          <span className="wp-m-inline">9.0 · TAKEAWAYS</span>
         </Label>
         <div className="wp-stack">
           <article className="wp-card wp-takeaway">
             <h3>MVP SCOPE & PRODUCT DIRECTION</h3>
             <p className="wp-body">
-              Owned UX and product direction for the Web Portal MVP, aligning user needs, business
-              goals, and technical constraints. Partnered with engineering to prioritise
-              high-impact features based on early user feedback.
+              Collaborated with Patricia to define the UX direction and shape key product decisions
+              for the Web Portal MVP. Partnered closely with Engineering to prioritise high-impact
+              features, incorporating early user feedback and technical considerations.
             </p>
           </article>
           <article className="wp-card wp-takeaway">
