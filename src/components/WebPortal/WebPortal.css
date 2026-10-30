@@ -218,14 +218,6 @@
   background: #2f9e63;
 }
 
-.wp-hero__project {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: var(--color-vermilion);
-  margin: 0 0 0.85rem;
-}
-
 .wp-hero__title {
   font-family: var(--font-serif);
   font-size: clamp(3rem, 6vw, 4.75rem);

@@ -14,8 +14,7 @@ export function WebPortalHero() {
         <div className="wp-hero__rule" />
 
         <div className="wp-hero__intro">
-          <p className="wp-hero__badge wp-d">IN PROGRESS</p>
-          <p className="wp-hero__project wp-m">PROJECT 001</p>
+          <p className="wp-hero__badge">IN PROGRESS</p>
           <h1 id="webportal-heading" className="wp-hero__title">
             Web Portal 2.0
           </h1>

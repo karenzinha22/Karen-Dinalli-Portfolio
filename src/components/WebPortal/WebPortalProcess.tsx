@@ -52,7 +52,7 @@ export function WebPortalAudit() {
       <div className="page-container">
         <div className="wp-split">
           <div>
-            <p className="wp-kicker wp-d">6.1 · AUDIT (RUNNING IN PARALLEL)</p>
+            <p className="wp-kicker wp-d">6.1 · PART 2 OF THE AUDIT</p>
             <p className="wp-kicker wp-m">6.1 · PART 2 OF THE AUDIT</p>
             <h2 id="wp-audit-heading" className="wp-h2">UX audit of the platform</h2>
             <p className="wp-body">
