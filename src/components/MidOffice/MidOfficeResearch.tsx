@@ -2,35 +2,6 @@ import { H, Label } from '../WebPortal/WebPortalPrimitives';
 import { MidOfficeFigure } from './MidOfficeFigure';
 import { assets } from './midofficeAssets';
 
-const plan = [
-  {
-    n: '1',
-    title: 'Month 1–4',
-    items: [
-      'UX Audit',
-      'Stakeholder talks',
-      'User recruitment',
-      '7 user interviews',
-      'Workflow analysis',
-    ],
-  },
-  {
-    n: '2',
-    title: 'Month 4–5',
-    items: ['Pain point clusters', 'HMW exercises', 'Opportunity areas'],
-  },
-  {
-    n: '3',
-    title: 'Month 5+',
-    items: ['Wireframes', 'Prototypes', 'Validation rounds'],
-  },
-  {
-    n: '4',
-    title: 'Ongoing',
-    items: ['Testing NL + UK', 'A/B testing', 'Iteration'],
-  },
-];
-
 const keyNumbers = [
   { value: '7/7', label: 'Users cited task ownership as a critical gap' },
   { value: '4/7', label: 'Users reported performance delays affecting daily work' },
@@ -98,53 +69,6 @@ export function MidOfficeResearch() {
               <p className="wp-stat__label">Markets: Netherlands & UK</p>
             </article>
           </div>
-        </div>
-
-        <h3 className="wp-subhead">OUR PLAN</h3>
-        <ol className="mo-plan">
-          {plan.map((step) => (
-            <li key={step.title} className="mo-plan__step">
-              <div className="mo-plan__head">
-                <span className="wp-num">{step.n}</span>
-                <span className="mo-plan__title">{step.title}</span>
-              </div>
-              <ul className="mo-plan__items">
-                {step.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ol>
-
-        <div className="mo-cards-3 mo-methods">
-          <article className="wp-card mo-method">
-            <h3>
-              <img src={assets.methodAudit} alt="" />
-              UX/UI Audit
-            </h3>
-            <p>
-              <strong>Full heuristic audit</strong> of the legacy platform&apos;s screens, patterns,
-              and navigation flows.
-            </p>
-          </article>
-          <article className="wp-card mo-method">
-            <h3>
-              <img src={assets.methodInterviews} alt="" />
-              User Interviews
-            </h3>
-            <p>
-              <strong>7 external users</strong> across different operational roles in{' '}
-              <strong>Netherlands and UK markets.</strong>
-            </p>
-          </article>
-          <article className="wp-card mo-method">
-            <h3>
-              <img src={assets.methodWorkflow} alt="" />
-              Workflow Analysis
-            </h3>
-            <p>Deep dive into case management, task workflows, and permissions complexity.</p>
-          </article>
         </div>
       </div>
     </section>

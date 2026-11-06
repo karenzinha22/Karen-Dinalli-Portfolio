@@ -11,7 +11,7 @@ export const footerLinks = [
   },
   {
     label: 'RESUME',
-    href: 'https://drive.google.com/file/d/1lgDbxP2jZd2jXkPrf-4OcmVe7IIp_-aQ/view?usp=drive_link',
+    href: 'https://drive.google.com/file/d/1YITuqfgPtqsiNYd2YL6S7Fo0QMyBzAiY/view?usp=sharing',
     external: true,
   },
 ] as const;
