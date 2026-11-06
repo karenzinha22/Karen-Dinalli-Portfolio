@@ -80,10 +80,10 @@ export function MidOfficeFindings() {
     <section className="wp-section" aria-labelledby="mo-findings-heading">
       <div className="page-container">
         <Label>6.0 · KEY FINDINGS</Label>
-        <h2 id="mo-findings-heading" className="wp-h2 wp-center">
+        <h2 id="mo-findings-heading" className="wp-h2">
           What We Uncovered
         </h2>
-        <p className="wp-body wp-center">
+        <p className="wp-body">
           Research surfaced critical <H>pain points</H> that couldn&apos;t have been identified
           through design assumptions alone.
         </p>
@@ -141,15 +141,13 @@ export function MidOfficeFindings() {
 
         <article className="wp-dark mo-block">
           <h3>BASED ON THESE FINDINGS</h3>
-          <p>
-            We identified the key use cases for Underwriters, Multi-Case Managers, Approval Users
-            and Read-Only Users through UX research. Using these insights, we defined a 5-month
-            design sprint to deliver the MVP designs. We also collaborated closely with the
-            engineering team to ensure alignment and maintain a fast project turnaround.
+          <p className="mo-findings-lead">
+            The platform had the functionality. What it lacked was clarity, relevance and
+            flexibility.
           </p>
-          <p className="mo-dark-note">
-            This redesign was the start of a new era for MidOffice focused on consistency,
-            scalability and user clarity.
+          <p className="mo-findings-rest">
+            Users needed a more intuitive way to navigate applications, manage tasks and find the
+            information relevant to their work, without having to work around the platform.
           </p>
         </article>
       </div>

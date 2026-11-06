@@ -38,8 +38,8 @@ export function MidOfficeHero() {
           <div>
             <dt>SCOPE</dt>
             <dd>
-              Redesign, research, user Interview, information architecture, accessibility, ux
-              strategy.
+              Improving the experience of managing and processing mortgage applications across three
+              core areas.
             </dd>
           </div>
           <div>

@@ -4,7 +4,24 @@ export const assets = {
   hero: `${base}/midoffice-hero.png`,
   oldPlatformDesktop: `${base}/old-platform-desktop.png`,
   oldPlatformMobile: `${base}/old-platform-mobile.png`,
-  audit: `${base}/audit-desktop.svg`,
+  oldPlatformScreens: [
+    {
+      src: `${base}/iteration-01-task-list-old.png`,
+      alt: 'Legacy MidOffice task list',
+    },
+    {
+      src: `${base}/iteration-02-case-list-old.png`,
+      alt: 'Legacy MidOffice case list',
+    },
+    {
+      src: `${base}/iteration-03-case-overview-old.png`,
+      alt: 'Legacy MidOffice case overview',
+    },
+    {
+      src: `${base}/iteration-04-menu-old.png`,
+      alt: 'Legacy MidOffice home menu',
+    },
+  ],
   userResearch: `${base}/user-research.png`,
   affinity: `${base}/affinity-mapping.png`,
   sketching: `${base}/sketching.png`,
@@ -25,10 +42,8 @@ export const assets = {
     { src: `${base}/iteration-04-task-list.png`, title: 'Task List' },
     { src: `${base}/iteration-05-assessment.png`, title: 'Assessment' },
   ],
+  progressLine: `${base}/progress-line.png`,
   marker: `${base}/icons/marker-target.png`,
-  methodAudit: `${base}/icons/method-audit.png`,
-  methodInterviews: `${base}/icons/method-interviews.png`,
-  methodWorkflow: `${base}/icons/method-workflow.png`,
   lessonSlow: `${base}/icons/lesson-slow.png`,
   lessonEvidence: `${base}/icons/lesson-evidence.png`,
   lessonStrategy: `${base}/icons/lesson-strategy.png`,

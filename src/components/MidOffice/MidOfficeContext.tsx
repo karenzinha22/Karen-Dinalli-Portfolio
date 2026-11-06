@@ -1,5 +1,4 @@
-import { H, Label, WpPicture } from '../WebPortal/WebPortalPrimitives';
-import { MidOfficeFigure } from './MidOfficeFigure';
+import { H, Label } from '../WebPortal/WebPortalPrimitives';
 import { assets } from './midofficeAssets';
 
 const limits = [
@@ -11,35 +10,6 @@ const limits = [
   'POOR DEVELOPER EXPERIENCE',
   'SLOW FEATURE DELIVERY',
   'COMPLEX NAVIGATION & WORKFLOWS',
-];
-
-const plan = [
-  {
-    n: '1',
-    title: 'Month 1–4',
-    items: [
-      'UX Audit',
-      'Stakeholder talks',
-      'User recruitment',
-      '7 user interviews',
-      'Workflow analysis',
-    ],
-  },
-  {
-    n: '2',
-    title: 'Month 4–5',
-    items: ['Pain point clusters', 'HMW exercises', 'Opportunity areas'],
-  },
-  {
-    n: '3',
-    title: 'Month 5+',
-    items: ['Wireframes', 'Prototypes', 'Validation rounds'],
-  },
-  {
-    n: '4',
-    title: 'Ongoing',
-    items: ['Testing NL + UK', 'A/B testing', 'Iteration'],
-  },
 ];
 
 const goalColumns = [
@@ -86,13 +56,33 @@ const contribution = [
   'UX Audit',
   'Problem Framing',
   'User Flows',
-  'Wire-framing',
-  'Design validation',
-  'Cross-functional collab',
+  'Design Validation',
+  'Cross-functional Collab',
+  'Improve Accessibility',
 ];
 
-const oldPlatformAlt =
-  'Legacy MidOffice case list and case overview, the platform before the redesign';
+function OldPlatformGallery() {
+  const screens = [...assets.oldPlatformScreens, ...assets.oldPlatformScreens];
+
+  return (
+    <div className="mo-marquee">
+      <ul className="mo-marquee__track">
+        {screens.map((screen, index) => {
+          const duplicate = index >= assets.oldPlatformScreens.length;
+          return (
+            <li
+              key={`${screen.src}-${index}`}
+              className="mo-marquee__item"
+              aria-hidden={duplicate ? true : undefined}
+            >
+              <img src={screen.src} alt={duplicate ? '' : screen.alt} draggable={false} />
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
 
 export function MidOfficeOverview() {
   return (
@@ -105,9 +95,16 @@ export function MidOfficeOverview() {
               The Platform
             </h2>
             <p className="wp-body">
-              MidOffice is a cloud-based platform that connects lenders, brokers, and financial
-              institutions to simplify mortgage applications and manage the journey from application
-              to completion.
+              <strong>What is MidOffice?</strong>
+            </p>
+            <p className="wp-body">
+              MidOffice is a mortgage application processing platform built to automate and manage
+              the journey from application submission to lending decision.
+            </p>
+            <p className="wp-body">
+              It handles complex processing activities behind the scenes, while providing
+              underwriters with the tools to monitor applications, manage tasks and resolve
+              exceptions that require human intervention.
             </p>
           </div>
           <div className="wp-stack">
@@ -130,15 +127,7 @@ export function MidOfficeOverview() {
           </div>
         </div>
 
-        <div className="mo-panel">
-          <MidOfficeFigure src={assets.oldPlatformDesktop} alt={oldPlatformAlt}>
-            <WpPicture
-              desktop={assets.oldPlatformDesktop}
-              mobile={assets.oldPlatformMobile}
-              alt={oldPlatformAlt}
-            />
-          </MidOfficeFigure>
-        </div>
+        <OldPlatformGallery />
       </div>
     </section>
   );
@@ -155,8 +144,13 @@ export function MidOfficeChallenge() {
               A Platform at Its Limits
             </h2>
             <p className="wp-body">
-              The platform had become increasingly difficult to maintain and no longer matched
-              modern user expectations.
+              The goal of the MidOffice redesign was to simplify a complex mortgage processing
+              platform, improving usability, navigation and workflow efficiency.
+            </p>
+            <p className="wp-body">
+              We wanted to help underwriters find the information they need faster, manage their
+              tasks more effectively, and have better visibility and control over the mortgage
+              application process.
             </p>
           </div>
           <ol className="mo-issues">
@@ -167,19 +161,6 @@ export function MidOfficeChallenge() {
               </li>
             ))}
           </ol>
-        </div>
-
-        <div className="mo-audit">
-          <p className="mo-audit__label">INITIAL AUDIT</p>
-          <p className="wp-body">
-            We conducted an initial heuristic evaluation before the user research phase and a
-            second evaluation during the interview process to validate findings against real user
-            behavior.
-          </p>
-          <MidOfficeFigure
-            src={assets.audit}
-            alt="Initial heuristic audit of the legacy MidOffice task list, case overview, case list, and home navigation"
-          />
         </div>
       </div>
     </section>
@@ -226,53 +207,12 @@ export function MidOfficeGoals() {
           users, clearly identify the problems to solve, and guide the development of meaningful
           solutions.
         </p>
-
-        <h3 className="wp-subhead">OUR PLAN</h3>
-        <ol className="mo-plan">
-          {plan.map((step) => (
-            <li key={step.title} className="mo-plan__step">
-              <div className="mo-plan__head">
-                <span className="wp-num">{step.n}</span>
-                <span className="mo-plan__title">{step.title}</span>
-              </div>
-              <ul className="mo-plan__items">
-                {step.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ol>
-
-        <div className="mo-cards-3 mo-methods">
-          <article className="wp-card mo-method">
-            <h3>
-              <img src={assets.methodAudit} alt="" />
-              UX/UI Audit
-            </h3>
-            <p>
-              <strong>Full heuristic audit</strong> of the legacy platform&apos;s screens, patterns,
-              and navigation flows.
-            </p>
-          </article>
-          <article className="wp-card mo-method">
-            <h3>
-              <img src={assets.methodInterviews} alt="" />
-              User Interviews
-            </h3>
-            <p>
-              <strong>7 external users</strong> across different operational roles in{' '}
-              <strong>Netherlands and UK markets.</strong>
-            </p>
-          </article>
-          <article className="wp-card mo-method">
-            <h3>
-              <img src={assets.methodWorkflow} alt="" />
-              Workflow Analysis
-            </h3>
-            <p>Deep dive into case management, task workflows, and permissions complexity.</p>
-          </article>
-        </div>
+        <figure className="mo-process">
+          <img
+            src={assets.progressLine}
+            alt="MidOffice process from research to creation, across Discover, Define, Ideate, and Implement"
+          />
+        </figure>
       </div>
     </section>
   );
@@ -304,7 +244,7 @@ export function MidOfficeTeam() {
             </article>
             <article className="wp-card">
               <h3 className="wp-card__title">MY CONTRIBUTION</h3>
-              <ul className="mo-chips">
+              <ul className="mo-chips mo-chips--contribution">
                 {contribution.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
