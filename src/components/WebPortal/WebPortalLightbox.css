@@ -39,6 +39,8 @@
   position: relative;
   z-index: 1;
   display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   max-width: 100%;
   max-height: 100%;
   align-items: center;
@@ -57,19 +59,42 @@
   border: 0;
 }
 
+.wp-lightbox__stage {
+  display: flex;
+  max-width: min(100%, calc(100vw - 2.5rem));
+  max-height: calc(100vh - 8rem);
+  max-height: calc(100dvh - 8rem);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+}
+
+.wp-lightbox__stage.is-zoomed {
+  cursor: grab;
+}
+
+.wp-lightbox__stage.is-panning {
+  cursor: grabbing;
+}
+
 .wp-lightbox__img {
   display: block;
   width: auto;
   height: auto;
   max-width: min(100%, calc(100vw - 2.5rem));
-  max-height: calc(100vh - 4.5rem);
+  max-height: calc(100vh - 8rem);
+  max-height: calc(100dvh - 8rem);
+  transform-origin: center center;
+  -webkit-user-drag: none;
 }
 
 .wp-lightbox__close {
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
-  z-index: 2;
+  z-index: 3;
   display: inline-flex;
   width: 2.5rem;
   height: 2.5rem;
@@ -84,13 +109,98 @@
   cursor: pointer;
 }
 
+.wp-lightbox__tools {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.3rem;
+  border-radius: 999px;
+  background: rgba(245, 241, 232, 0.96);
+  color: #20201e;
+  box-shadow: 0 10px 28px rgba(20, 20, 18, 0.18);
+}
+
+.wp-lightbox__tools button,
+.wp-lightbox__zoom {
+  display: inline-flex;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.wp-lightbox__tools button {
+  width: 2.25rem;
+  cursor: pointer;
+}
+
+.wp-lightbox__reset {
+  width: auto;
+  padding-inline: 0.85rem;
+}
+
+.wp-lightbox__zoom {
+  min-width: 3.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.wp-lightbox__tools button:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
+.wp-lightbox__tools button:not(:disabled):hover {
+  background: rgba(32, 32, 30, 0.06);
+}
+
+.wp-lightbox__close:hover {
+  background: #fff;
+}
+
+.wp-lightbox__tools button:focus-visible,
+.wp-lightbox__close:focus-visible {
+  outline: 2px solid #20201e;
+  outline-offset: 2px;
+}
+
 @media (max-width: 767px) {
   .wp-lightbox {
-    padding: 0.75rem;
+    padding:
+      max(0.75rem, env(safe-area-inset-top))
+      0.75rem
+      max(0.75rem, env(safe-area-inset-bottom));
   }
 
+  .wp-lightbox__stage,
   .wp-lightbox__img {
-    max-width: min(100%, calc(100vw - 1.5rem));
-    max-height: calc(100vh - 4rem);
+    max-width: calc(100vw - 1.5rem);
+    max-height: calc(100vh - 8.5rem);
+    max-height: calc(100dvh - 8.5rem);
+  }
+
+  .wp-lightbox__tools button,
+  .wp-lightbox__zoom {
+    height: 2.75rem;
+  }
+
+  .wp-lightbox__tools button {
+    width: 2.75rem;
+  }
+
+  .wp-lightbox__reset {
+    width: auto;
+  }
+
+  .wp-lightbox__close {
+    position: fixed;
+    top: max(0.75rem, env(safe-area-inset-top));
+    right: 0.75rem;
   }
 }
